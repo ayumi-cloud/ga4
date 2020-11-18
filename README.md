@@ -1,40 +1,30 @@
-# Google Analytics integration plugin
+# Google Analytics 4 integration plugin
 
-This plugin adds Google Analytics tracking and reporting features to the [OctoberCMS](http://octobercms.com).
+xx
+
+This Plugin to add GA4 to the dashboard and some custom components. This plugin uses the new API's:
+
+### Google Analytics Admin API (GA4):
+
+https://developers.google.com/analytics/devguides/config/admin/v1
+
+### Google Analytics Data API (GA4):
+
+https://developers.google.com/analytics/devguides/reporting/data/v1
 
 ## Configuration
 
-### Configure the API
+### Step 1 - Create a client ID
 
-To get started using Google Analytics API, you need to first [create or select a project in the Google Developers Console and enable the API](https://console.developers.google.com/start/api?id=analytics&credential=client_key). Using this link guides you through the process and activates the Google Analytics API automatically.
+The settings and instructions for authorizing Google have been drastically simplified. For existing accounts, you will need to generate a new key file using these steps:
 
-Alternatively, you can activate the Google Analytics API yourself in the Developers Console by doing the following:
+1. Log in to the [Google Developers Console](https://console.developers.google.com/home/dashboard) and do a search for `Service accounts` in the search box at the top.
+2. If you need to create a new `Service Account`, click on the `Create Service Account` at the top and then add a `name` and click on `Create`, you can skip setting up the `description` and `roles`.
+3. You should see an account in the **Service Accounts** list and under the `Actions` column is a hamburger menu. Open this hamburger menu and select `Create key`.
+4. Choose the `Key type` of `JSON`.
+5. Download the file to your computer and upload it to the October back-end settings form.
 
-1. Open the [Credentials page](https://console.developers.google.com/project/_/apiui/credential).
-
-1. Select the **Overview** menu item and enable the **Analytics API**.
-
-In either case, you should end up on the **Credentials** page and can create your project's credentials from here.
-
-#### Create a client ID
-
-1. Open the [**Service accounts** section](https://console.developers.google.com/projectselector/permissions/serviceaccounts) of the Developers Console's **Permissions** page.
-
-1. Click **Create service account**.
-
-1. In the **Create service account** window, type a name for the service account, eg: `OctoberCMS Analytics`.
-
-1. Place a tick in the box  **Furnish a new private key** and select **JSON** for the **Key type**.
-
-1. Then, click **Create**.
-
-1. A `.json` file will be generated, this is the private key for your account. Accept the download and save it to your computer.
-
-1. Click **Close**.
-
-1. You should see an email ending with `iam.gserviceaccount.com`, if not select the **Permissions tab**. Copy this address to your clipboard.
-
-### Configure Google Analytics
+### Step 2 - Configure Google Analytics
 
 1. In a new tab, navigate to the main [Google Analytics site](https://www.google.com/analytics/web/) and select the property you want to track.
 
