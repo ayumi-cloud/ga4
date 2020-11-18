@@ -7,7 +7,7 @@ namespace Google\GA4\Components;
 use Cms\Classes\ComponentBase;
 use Google\GA4\Models\Settings;
 
-class GaTracker extends ComponentBase
+class GaAmpTracker extends ComponentBase
 {
     /**
      * Component Details.

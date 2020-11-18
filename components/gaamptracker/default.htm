@@ -1,0 +1,12 @@
+<amp-analytics type="gtag" data-credentials="include">
+    <script type="application/json">
+    {
+        "vars" : {
+            "gtag_id": "{{ __SELF__.trackingId }}",
+            "config" : {
+                "{{ __SELF__.trackingId }}": { "groups": "default" }
+            }
+        }
+    }
+    </script>
+</amp-analytics>

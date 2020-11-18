@@ -1,0 +1,9 @@
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ __SELF__.measurementId }}"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', '{{ __SELF__.measurementId }}');
+    gtag('config', '{{ __SELF__.conversionId }}'); // Wrap in an if statement
+</script>
