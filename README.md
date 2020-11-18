@@ -19,9 +19,13 @@ https://developers.google.com/analytics/devguides/reporting/data/v1
 The settings and instructions for authorizing Google have been drastically simplified. For existing accounts, you will need to generate a new key file using these steps:
 
 1. Log in to the [Google Developers Console](https://console.developers.google.com/home/dashboard) and do a search for `Service accounts` in the search box at the top.
+
 2. If you need to create a new `Service Account`, click on the `Create Service Account` at the top and then add a `name` and click on `Create`, you can skip setting up the `description` and `roles`.
+
 3. You should see an account in the **Service Accounts** list and under the `Actions` column is a hamburger menu. Open this hamburger menu and select `Create key`.
+
 4. Choose the `Key type` of `JSON`.
+
 5. Download the file to your computer and upload it to the October back-end settings form.
 
 ### Step 2 - Configure Google Analytics
