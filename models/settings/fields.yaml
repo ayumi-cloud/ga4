@@ -14,28 +14,8 @@ fields:
 
 tabs:
     fields:
-        tracking_id:
+        measurement_id:
             tab: rainlab.googleanalytics::lang.strings.tracking
             span: left
             label: rainlab.googleanalytics::lang.settings.tracking_id
             commentAbove: rainlab.googleanalytics::lang.settings.tracking_id_comment
-
-        domain_name:
-            tab: rainlab.googleanalytics::lang.strings.tracking
-            span: right
-            label: rainlab.googleanalytics::lang.settings.domain_name
-            commentAbove: rainlab.googleanalytics::lang.settings.domain_name_comment
-
-        anonymize_ip:
-            tab: rainlab.googleanalytics::lang.strings.tracking
-            type: switch
-            span: left
-            label: rainlab.googleanalytics::lang.settings.anonymize_ip
-            commentAbove: rainlab.googleanalytics::lang.settings.anonymize_ip_comment
-
-        force_ssl:
-            tab: rainlab.googleanalytics::lang.strings.tracking
-            type: switch
-            span: left
-            label: rainlab.googleanalytics::lang.settings.force_ssl
-            commentAbove: rainlab.googleanalytics::lang.settings.force_ssl_comment
