@@ -16,6 +16,15 @@ https://developers.google.com/analytics/devguides/config/admin/v1
 
 https://developers.google.com/analytics/devguides/reporting/data/v1
 
+---
+
+## Goals of this plugin
+
+1. Add and update code from Rainlab Google Analytics plugin
+2. Add and update code from Google Analytics Extension plugin
+3. Add new features from the two new api's
+4. Add more components for other frameworks
+
 ## Configuration
 
 ### Step 1 - Create a client ID
