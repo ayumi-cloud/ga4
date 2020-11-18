@@ -1,6 +1,8 @@
 # Google Analytics 4 integration plugin
 
 > ⚠️ WARNING - This plugin is not finished - waiting for Google to finish coding the sdK ⚠️ 
+> ⚠️ Going to re-code everything from the ground up and add lots of new features ⚠️ 
+> ⚠️ This is a hard fork ⚠️ 
 
 This Plugin adds GA4 to the backend dashboard and some custom components. The plugin uses the new API's:
 
