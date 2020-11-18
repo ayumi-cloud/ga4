@@ -2,7 +2,7 @@
 
 > ⚠️ WARNING - This plugin is not finished - waiting for Google to finish coding the sdK ⚠️ 
 
-This Plugin to add GA4 to the dashboard and some custom components. This plugin uses the new API's:
+This Plugin adds GA4 to the backend dashboard and some custom components. The plugin uses the new API's:
 
 ### Google Analytics Admin API (GA4):
 
