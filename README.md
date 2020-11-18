@@ -10,9 +10,10 @@
 
 ## Contents
 
-- [GA API's]()
-	- [Google Analytics 4 Admin API](#setting-up-your-pushover-account)
-	- [Google Analytics 4 Data API](#setting-up-your-pushover-account)
+- [GA API's](#ga-apis)
+	- [Google Analytics 4 Admin API](#google-analytics-4-admin-api)
+	- [Google Analytics 4 Data API](#google-analytics-4-data-api)
+- [Goals of this plugin](#goals-of-this-plugin)
 - [Installation](#installation)
 	- [Setting up your Pushover account](#setting-up-your-pushover-account)
 - [Usage](#usage)
@@ -47,7 +48,7 @@ https://developers.google.com/analytics/devguides/reporting/data/v1
 
 <p><img src="https://github.com/ayumi-cloud/ga4/blob/master/assets/images/dashboard-1.png"></p>
 
-## Configuration
+## Installation
 
 ### Step 1 - Create a client ID
 
