@@ -33,8 +33,8 @@ class Settings extends Model
 
     public function initSettingsData()
     {
-        $this->domain_name = 'auto';
-        $this->anonymize_ip = false;
-        $this->force_ssl = false;
+        //$this->domain_name = 'auto';
+        //$this->anonymize_ip = false;
+        //$this->force_ssl = false;
     }
 }
