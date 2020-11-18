@@ -6,6 +6,8 @@
 >
 > This is a hard fork
 
+<p><img src="https://github.com/ayumi-cloud/ga4/blob/master/assets/images/banner.png"></p>
+
 This Plugin adds GA4 to the backend dashboard and some custom components. The plugin uses the new API's:
 
 ### Google Analytics Admin API (GA4):
@@ -24,6 +26,9 @@ https://developers.google.com/analytics/devguides/reporting/data/v1
 2. Add and update code from Google Analytics Extension plugin
 3. Add new features from the two new api's
 4. Add more components for other frameworks
+5. Make all the dashboard widgets **responsive** plus add new and exciting custom widgets to the dashboard, e.g.
+
+<p><img src="https://github.com/ayumi-cloud/ga4/blob/master/assets/images/dashboard-1.png"></p>
 
 ## Configuration
 
