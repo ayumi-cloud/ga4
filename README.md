@@ -8,13 +8,30 @@
 
 <p><img src="https://github.com/ayumi-cloud/ga4/blob/master/assets/images/banner.png"></p>
 
+## Contents
+
+- [GA API's]()
+	- [Google Analytics 4 Admin API](#setting-up-your-pushover-account)
+	- [Google Analytics 4 Data API](#setting-up-your-pushover-account)
+- [Installation](#installation)
+	- [Setting up your Pushover account](#setting-up-your-pushover-account)
+- [Usage](#usage)
+	- [Available Message methods](#available-message-methods)
+- [Changelog](#changelog)
+- [Testing](#testing)
+- [Security](#security)
+- [Contributing](#contributing)
+- [License](#license)
+
+## GA API's
+
 This Plugin adds GA4 to the backend dashboard and some custom components. The plugin uses the new API's:
 
-### Google Analytics Admin API (GA4):
+### Google Analytics 4 Admin API
 
 https://developers.google.com/analytics/devguides/config/admin/v1
 
-### Google Analytics Data API (GA4):
+### Google Analytics 4 Data API
 
 https://developers.google.com/analytics/devguides/reporting/data/v1
 
@@ -147,6 +164,10 @@ The GA4 plugin has been tested in the following browsers:
   </tr>
 </table>
 
+## Changelog
+
+Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
+
 ## Contributions, Feature Requests and Feedback
 
 We are actively inviting new contributors! To start, please read the [contribution guide](CONTRIBUTING.md).
@@ -157,7 +178,10 @@ This project is only possible thanks to the work of many dedicated volunteers. E
 - Choose an existing [issue](https://github.com/ayumi-cloud/ga4/issues) on GitHub and submit a pull request to fix it.
 - Open a new issue to report an opportunity for improvement.
 
-## sec
+## Security
 
+If you discover any security related issues, please open an issue! We will try and sort it out asap.
 
+## License
 
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
