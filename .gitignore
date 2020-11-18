@@ -1,4 +1,13 @@
-/vendor
+runner.log
+runner.xml
 composer.lock
+package-lock.json
+vendor/*
+package.json
+Gruntfile.js
+node_modules/*
+humbug*
+build/*
+.vscode
 .DS_Store
 .whitesource
