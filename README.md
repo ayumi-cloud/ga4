@@ -16,6 +16,8 @@ https://developers.google.com/analytics/devguides/reporting/data/v1
 
 ### Step 1 - Create a client ID
 
+> This part will be re-written!
+
 The settings and instructions for authorizing Google have been drastically simplified. For existing accounts, you will need to generate a new key file using these steps:
 
 1. Log in to the [Google Developers Console](https://console.developers.google.com/home/dashboard) and do a search for `Service accounts` in the search box at the top.
