@@ -114,7 +114,40 @@ Then add the plugin's tracking code to your mobile website just after the `<body
 
 3. Restart Apache
 
-## Contributions, Feature Requests, and Feedback
+## Browser Support
+
+The GA4 plugin has been tested in the following browsers:
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/alrra/browser-logos/39.2.2/src/chrome/chrome_48x48.png" alt="Chrome"><br>
+      ✔
+    </td>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/alrra/browser-logos/39.2.2/src/firefox/firefox_48x48.png" alt="Firefox"><br>
+      ✔
+    </td>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/alrra/browser-logos/39.2.2/src/safari/safari_48x48.png" alt="Safari"><br>
+      9+
+    </td>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/alrra/browser-logos/39.2.2/src/edge/edge_48x48.png" alt="Edge"><br>
+      ✔
+    </td>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/alrra/browser-logos/39.2.2/src/archive/internet-explorer_9-11/internet-explorer_9-11_48x48.png" alt="Internet Explorer"><br>
+      11
+    </td>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/alrra/browser-logos/39.2.2/src/opera/opera_48x48.png" alt="Opera"><br>
+      ✔
+    </td>
+  </tr>
+</table>
+
+## Contributions, Feature Requests and Feedback
 
 We are actively inviting new contributors! To start, please read the [contribution guide](CONTRIBUTING.md).
 
