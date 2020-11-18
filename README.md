@@ -88,7 +88,7 @@ To add the plugin's tracking code to your website add the component into the `<h
 
 To add the plugin's tracking code to your mobile website add this code line into the `<head>` section of your website:
 
-```php
+```html
 <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 ```
 
@@ -106,9 +106,25 @@ Then add the plugin's tracking code to your mobile website just after the `<body
 
 1. Follow this link: http://curl.haxx.se/ca/cacert.pem and save it in a file called `cacert.pem`.
 
-1. Open your `php.ini` file insert or edit the following line: 
-    ```
+2. Open your `php.ini` file insert or edit the following line: 
+
+    ```php
     curl.cainfo = "[pathtothisfile]\cacert.pem"
     ```
 
-1. Restart Apache
+3. Restart Apache
+
+## Contributions, Feature Requests, and Feedback
+
+We are actively inviting new contributors! To start, please read the [contribution guide](CONTRIBUTING.md).
+
+This project is only possible thanks to the work of many dedicated volunteers. Everyone is encouraged to help in ways large and small. Here are a few ways you can help:
+
+- Read the current content and help us fix any spelling mistakes or grammatical errors.
+- Choose an existing [issue](https://github.com/ayumi-cloud/ga4/issues) on GitHub and submit a pull request to fix it.
+- Open a new issue to report an opportunity for improvement.
+
+## sec
+
+
+
