@@ -13,6 +13,7 @@
 - [GA API's](#ga-apis)
 	- [Google Analytics 4 Admin API](#google-analytics-4-admin-api)
 	- [Google Analytics 4 Data API](#google-analytics-4-data-api)
+- [Enhancements](#enhancements)
 - [Goals of this plugin](#goals-of-this-plugin)
 - [Installation](#installation)
 	- [Step 1 - Create a client ID](#step-1---create-a-client-id)
@@ -43,7 +44,7 @@ https://developers.google.com/analytics/devguides/reporting/data/v1
 
 ## Enhancements
 
-- This plugin has been optimized to work a long side modern browsers that support **back/forward cache** (bfcache) api. To learn more about bfcache, see these resources:
+- This plugin has been optimized to work a long side modern browsers that support the **back/forward cache** (bfcache) api. To learn more about bfcache, see these resources:
 
     [Exploring a back/forward cache for Chrome](https://developers.google.com/web/updates/2019/02/back-forward-cache)
     
