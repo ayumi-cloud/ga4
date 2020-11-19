@@ -1,9 +1,21 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ __SELF__.measurementId }}"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+function gtag() {
+    dataLayer.push(arguments);
+}
+gtag("js", new Date());
 
-    gtag('config', '{{ __SELF__.measurementId }}');
-    gtag('config', '{{ __SELF__.conversionId }}'); // Wrap in an if statement
+gtag("config", "{{ __SELF__.measurementId }}");
+gtag("config", "{{ __SELF__.conversionId }}"); // Wrap in an if statement
+
+// Send a pageview when the page is first loaded.
+gtag("event", "page_view");
+
+window.addEventListener("pageshow", function (event) {
+    if (event.persisted === true) {
+        // Send another pageview if the page is restored from bfcache.
+        gtag("event", "page_view");
+    }
+});
 </script>
