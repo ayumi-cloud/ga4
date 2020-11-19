@@ -41,6 +41,14 @@ https://developers.google.com/analytics/devguides/config/admin/v1
 
 https://developers.google.com/analytics/devguides/reporting/data/v1
 
+## Enhancements
+
+- This plugin has been optimized to work a long side modern browsers that support **back/forward cache** (bfcache) api. To learn more about bfcache, see these resources:
+
+    [Exploring a back/forward cache for Chrome](https://developers.google.com/web/updates/2019/02/back-forward-cache)
+    
+    [Browser Back/Forward Caches and their Benefit to Web Performance](https://dev.to/paulcalvano/browser-back-forward-caches-and-their-benefit-to-web-performance-4f4l)
+    
 ---
 
 ## Goals of this plugin
