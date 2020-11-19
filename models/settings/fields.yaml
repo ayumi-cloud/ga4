@@ -12,10 +12,16 @@ fields:
         label: rainlab.googleanalytics::lang.settings.profile_id
         commentAbove: rainlab.googleanalytics::lang.settings.profile_id_comment
 
-tabs:
-    fields:
-        measurement_id:
-            tab: rainlab.googleanalytics::lang.strings.tracking
-            span: left
-            label: rainlab.googleanalytics::lang.settings.tracking_id
-            commentAbove: rainlab.googleanalytics::lang.settings.tracking_id_comment
+    measurement_id:
+        tab: rainlab.googleanalytics::lang.strings.tracking
+        span: left
+        label: rainlab.googleanalytics::lang.settings.tracking_id
+        commentAbove: rainlab.googleanalytics::lang.settings.tracking_id_comment
+
+    conversion_id:
+        tab: rainlab.googleanalytics::lang.strings.tracking
+        span: right
+        label: rainlab.googleanalytics::lang.settings.tracking_id
+        commentAbove: rainlab.googleanalytics::lang.settings.tracking_id_comment
+
+    # Add consent feature
