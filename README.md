@@ -2,11 +2,9 @@
 
 > ⚠️ WARNING - This plugin is not finished - waiting for Google to finish coding the PHP SDK ⚠️ 
 >
-> Going to re-code everything from the ground up and add lots of new features
+> Going to re-code everything from the ground up and add lots of new features!
 >
-> This is a hard fork (to move somethings in a different direction and add extra features)
->
-> **No guarantee given to be finished** - you're welcome to add code updates and ideas!
+> This is a hard fork (to move somethings in a different direction and plenty of new and extra features)
 
 <p><img src="https://github.com/ayumi-cloud/ga4/blob/master/assets/images/banner.png"></p>
 
@@ -19,13 +17,13 @@ GA4 is the latest version of Google Analytics. Since it is the 4th version, it i
 
 ## Table of Contents 📑
 
+- [October CMS and Summer CMS Support](#october-cms-and-summer-cms-support-)
 - [GA API's](#ga-apis-%EF%B8%8F)
 	- [Google Analytics 4 Admin API](#google-analytics-4-admin-api-%EF%B8%8F)
 	- [Google Analytics 4 Data API](#google-analytics-4-data-api-%EF%B8%8F)
     - [Google Analytics 4 Reporting API v4](#google-analytics-4-reporting-api-v4-%EF%B8%8F)
 - [Vendor Packages](#vendor-packages-)
 - [Enhancements](#enhancements-)
-- [Goals of this plugin](#goals-of-this-plugin-)
 - [Installation](#installation-%EF%B8%8F)
 	- [Step 1 - Create a client ID](#step-1---create-a-client-id)
 	- [Step 2 - Configure Google Analytics](#step-2---configure-google-analytics)
@@ -33,6 +31,10 @@ GA4 is the latest version of Google Analytics. Since it is the 4th version, it i
 - [Optional Components](#optional-components-)
 	- [Tracking Code for Desktop Websites](#tracking-code-for-desktop-websites-)
 	- [Tracking Code for Mobile Websites](#tracking-code-for-mobile-websites-)
+- [Adding Custom Charts](#adding-custom-charts-)
+	- [Bar Charts](#bar-charts-)
+	- [Pie Charts](#pie-charts-)
+	- [Line Charts](#line-charts-)
 - [Troubleshooting](#troubleshooting-)
 	- [Fix for Windows / XAMPP](#fix-for-windows--xampp-)
 - [Browser Support](#browser-support-)
@@ -41,6 +43,23 @@ GA4 is the latest version of Google Analytics. Since it is the 4th version, it i
 	- [PSR](#psr-%EF%B8%8F)
 - [Security](#security-)
 - [License](#license-)
+
+## October CMS and Summer CMS Support 🔥
+
+This plugin will work out of the box with October CMS.
+
+For Summer CMS this plugin will be upgraded to take full advantage of the extra features supported by the CMS, below is a brief list of some of these features:
+
+- As the Summer CMS contains its own internal analytics, that is directly connected to the firewall module. GA4 will be a third-party analytics package.
+- Access to a wide range of different chart types.
+- The consent will be connected directly to the legal module.
+- Connected to the import and export settings feature.
+- Connected to the voice actions module.
+- Connected to the machine learning help wizard and search module.
+- Connected to the accessibility module.
+- Access to all the internal backend themes, including dark and light modes.
+
+(*) To keep this code clean, the summer cms plugin will be hosted on a different repo.
 
 ## GA API's 🛠️
 
@@ -75,18 +94,6 @@ https://developers.google.com/analytics/devguides/reporting/core/v4
     [Exploring a back/forward cache for Chrome](https://developers.google.com/web/updates/2019/02/back-forward-cache)
     
     [Browser Back/Forward Caches and their Benefit to Web Performance](https://dev.to/paulcalvano/browser-back-forward-caches-and-their-benefit-to-web-performance-4f4l)
-    
----
-
-## Goals of this plugin 📢
-
-1. Add and update code from Rainlab Google Analytics plugin
-2. Add and update code from Google Analytics Extension plugin
-3. Add new features from the two new api's
-4. Add more components for other frameworks
-5. Make all the dashboard widgets **responsive** plus add new and exciting custom widgets to the dashboard, e.g.
-
-<p><img src="https://github.com/ayumi-cloud/ga4/blob/master/assets/images/dashboard-1.png"></p>
 
 ## Installation ❤️
 
@@ -155,6 +162,43 @@ Then add the plugin's tracking code to your mobile website just after the `<body
 ```php
 {% component 'gaAmpTracker' %}
 ```
+
+## Adding Custom Charts 📈
+
+For the full list of features to create custom charts, see here: [Dimensions & Metrics Explorer Tool](https://ga-dev-tools.appspot.com/dimensions-metrics-explorer/)
+
+### Bar Charts 📊
+
+Bar charts are great for comparing values against each other. In this example, we'll create a bar chart to show how many users are visiting our site in the 10 most common cities.
+
+| Row                | Value      |
+| :----------------- | :--------- |
+| Widget Title       | Top Cities |
+| Dimension          | ga:city    |
+| Metric             | ga:users   |
+| Results to display | 10         |
+
+### Pie Charts ⭕
+
+Pie charts are useful for displaying the make up of data as a whole. Here we'll create a pie chart comparing the number of returning visitors to first time visitors.
+
+| Row                | Value         |
+| :----------------- | :------------ |
+| Widget Title       | Visitor Types |
+| Dimension          | ga:userType   |
+| Metric             | ga:sessions   |
+
+### Line Charts 📉
+
+A line chart is a graphical representation of an asset's historical price action that connects a series of data points with a continuous line. In this final example, we'll create a line chart to display how much of our website's traffic is coming from various device categories.
+
+| Row                | Value             |
+| :----------------- | :---------------- |
+| Widget Title       | Device Overview   |
+| Dimension          | ga:deviceCategory |
+| Metric             | ga:visits         |
+| Dimension Label    | Device            |
+| Metric Label       | Visits            |
 
 ## Troubleshooting 🌀
 
