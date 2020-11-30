@@ -75,8 +75,6 @@ https://developers.google.com/analytics/devguides/reporting/core/v4
     [Exploring a back/forward cache for Chrome](https://developers.google.com/web/updates/2019/02/back-forward-cache)
     
     [Browser Back/Forward Caches and their Benefit to Web Performance](https://dev.to/paulcalvano/browser-back-forward-caches-and-their-benefit-to-web-performance-4f4l)
-    
----
 
 ## Goals of this plugin 📢
 
@@ -156,9 +154,10 @@ Then add the plugin's tracking code to your mobile website just after the `<body
 {% component 'gaAmpTracker' %}
 ```
 
-## Adding Custom Charts
+## Adding Custom Charts 📈
 
-### Bar Charts
+### Bar Charts 📊
+
 Bar charts are great for comparing values against each other. In this example, we'll create a bar chart to show how many users are visiting our site in the 10 most common cities.
 
 | Row                | Value      |
@@ -168,7 +167,8 @@ Bar charts are great for comparing values against each other. In this example, w
 | Metric             | ga:users   |
 | Results to display | 10         |
 
-### Pie Charts
+### Pie Charts ⭕
+
 Pie charts are useful for displaying the make up of data as a whole. Here we'll create a pie chart comparing the number of returning visitors to first time visitors.
 
 | Row                | Value         |
@@ -177,7 +177,8 @@ Pie charts are useful for displaying the make up of data as a whole. Here we'll 
 | Dimension          | ga:userType   |
 | Metric             | ga:sessions   |
 
-### Percentage Charts
+### Percentage Charts 📉
+
 Percentage charts will display the make up of data as a percentage of it's total. In this final example, we'll create a percentage chart to display how much of our website's traffic is coming from various device categories.
 
 | Row                | Value             |
