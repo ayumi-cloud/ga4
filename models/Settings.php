@@ -53,5 +53,3 @@ class Settings extends Model
         //$this->force_ssl = false;
     }
 }
-
-
