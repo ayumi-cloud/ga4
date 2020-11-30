@@ -11,7 +11,7 @@ use Backend\Classes\ReportWidgetBase;
  */
 class PieChart extends ReportWidgetBase
 {
-    use \Bedard\AnalyticsExtension\Traits\DataTrait;
+    use \Google\GA4\Traits\DataTrait;
 
     /**
      * Define widget properties
