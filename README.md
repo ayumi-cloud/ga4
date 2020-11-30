@@ -46,6 +46,19 @@ GA4 is the latest version of Google Analytics. Since it is the 4th version, it i
 - [Security](#security-)
 - [License](#license-)
 
+## October CMS and Summer CMS Support
+
+This plugin will work out of the box with October CMS.
+
+For Summer CMS this plugin will be upgraded to take full advantage of the extra features supported by the CMS, below is a brief list of some of these features:
+
+- The consent will be connected directly to the legal module.
+- As Summer CMS conatins it's own internal analytics that is directly connected to the firewall module. GA4 will be a secondary analytics package.
+- Connected to the Import and export settings feature.
+- Connected to the voice actions module.
+- Connected to the machine learning help wizard and search module.
+- Access to all the internal backend themes, including dark and light mode.
+
 ## GA API's 🛠️
 
 This Plugin adds GA4 to the backend dashboard and some custom components. The plugin uses the new API's:
