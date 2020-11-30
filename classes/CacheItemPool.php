@@ -1,4 +1,8 @@
-<?php namespace RainLab\GoogleAnalytics\Classes;
+<?php 
+
+declare(strict_types=1);
+
+namespace Google\GA4\Classes;
 
 use Psr\Cache\CacheItemInterface;
 use Psr\Cache\CacheItemPoolInterface;

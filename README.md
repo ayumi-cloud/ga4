@@ -193,6 +193,21 @@ This project is only possible thanks to the work of many dedicated volunteers. E
 - Choose an existing [issue](https://github.com/ayumi-cloud/ga4/issues) on GitHub and submit a pull request to fix it.
 - Open a new issue to report an opportunity for improvement.
 
+If you find any bugs in the code or have any improvements in mind then feel free to generate a pull request.
+
+**Note:** Please use Unit Testing and Coding Best Practices in order to have a valid pull request 😉
+
+Patches and pull requests are encouraged. All code should follow the [PSR-1](https://www.php-fig.org/psr/psr-1/) and [PSR-2](https://www.php-fig.org/psr/psr-2/) style guidelines. **Please include unit tests whenever possible!**
+
+### PSR ♻️
+
+This plugin uses some PSR standards to be the most interoperable possible:
+
+- [PSR-6](https://www.php-fig.org/psr/psr-6/) Caching Interface.
+- [PSR-7](https://www.php-fig.org/psr/psr-7/) Standard interfaces to represent http requests, responses and uris.
+- [PSR-17](https://www.php-fig.org/psr/psr-17/) Standard factories to create PSR-7 objects.
+- [PSR-18](https://www.php-fig.org/psr/psr-18/) Standard interface to send a http request and return a response.
+
 ## Security
 
 If you discover any security related issues, please open an issue! We will try and sort it out asap.

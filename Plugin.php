@@ -45,27 +45,32 @@ class Plugin extends PluginBase
     {
         return [
             'Google\GA4\ReportWidgets\TrafficOverview' => [
-                'label'       => 'Google Analytics Traffic Overview', //... switch 2 lang
+                'label'       => 'google.ga4::lang.report_widgets.trafficOverview',
                 'context'     => 'dashboard',
                 'permissions' => ['google.ga4.view_widgets']
             ],
             'Google\GA4\ReportWidgets\TrafficSources' => [
-                'label'       => 'Google Analytics Traffic Sources', //... switch 2 lang
+                'label'       => 'google.ga4::lang.report_widgets.trafficSources',
                 'context'     => 'dashboard',
                 'permissions' => ['google.ga4.view_widgets']
             ],
             'Google\GA4\ReportWidgets\Browsers' => [
-                'label'       => 'Google Analytics Browsers', //... switch 2 lang
+                'label'       => 'google.ga4::lang.report_widgets.browsers',
                 'context'     => 'dashboard',
                 'permissions' => ['google.ga4.view_widgets']
             ],
             'Google\GA4\ReportWidgets\TrafficGoal' => [
-                'label'       => 'Google Analytics Traffic Goal', //... switch 2 lang
+                'label'       => 'google.ga4::lang.report_widgets.trafficGoal',
                 'context'     => 'dashboard',
                 'permissions' => ['google.ga4.view_widgets']
             ],
             'Google\GA4\ReportWidgets\TopPages' => [
-                'label'       => 'Google Analytics Top Pages', //... switch 2 lang
+                'label'       => 'google.ga4::lang.report_widgets.topPages',
+                'context'     => 'dashboard',
+                'permissions' => ['google.ga4.view_widgets']
+            ],
+            'Google\GA4\ReportWidgets\JsEvents' => [
+                'label'       => 'google.ga4::lang.report_widgets.jsEvents',
                 'context'     => 'dashboard',
                 'permissions' => ['google.ga4.view_widgets']
             ]
@@ -76,7 +81,7 @@ class Plugin extends PluginBase
     {
         return [
             'config' => [
-                'label'       => 'Google Analytics 4', //... switch 2 lang
+                'label'       => 'google.ga4::lang.config.label',
                 'icon'        => 'icon-bar-chart-o',
                 'iconSvg'     => 'plugins/google/ga4/assets/images/logo.svg',
                 'description' => 'google.ga4::lang.strings.settings_desc',
