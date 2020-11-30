@@ -59,7 +59,7 @@ For Summer CMS this plugin will be upgraded to take full advantage of the extra 
 - Connected to the voice actions module.
 - Connected to the machine learning help wizard and search module.
 - Connected to the accessibility module.
-- Access to all the internal backend themes, including dark and light mode.
+- Access to all the internal backend themes, including dark and light modes.
 
 (*) To keep this code clean, the summer cms plugin will be hosted on a different repo.
 
