@@ -54,6 +54,7 @@ This plugin will work out of the box with October CMS.
 For Summer CMS this plugin will be upgraded to take full advantage of the extra features supported by the CMS, below is a brief list of some of these features:
 
 - As the Summer CMS contains its own internal analytics, that is directly connected to the firewall module. GA4 will be a third-party analytics package.
+- Access to a wide range of different chart types.
 - The consent will be connected directly to the legal module.
 - Connected to the import and export settings feature.
 - Connected to the voice actions module.
