@@ -160,6 +160,8 @@ Then add the plugin's tracking code to your mobile website just after the `<body
 
 ## Adding Custom Charts 📈
 
+For the full list of features to create custom charts, see here: [Dimensions & Metrics Explorer Tool](https://ga-dev-tools.appspot.com/dimensions-metrics-explorer/)
+
 ### Bar Charts 📊
 
 Bar charts are great for comparing values against each other. In this example, we'll create a bar chart to show how many users are visiting our site in the 10 most common cities.
@@ -192,8 +194,6 @@ Percentage charts will display the make up of data as a percentage of it's total
 | Metric             | ga:visits         |
 | Dimension Label    | Device            |
 | Metric Label       | Visits            |
-
-- For the full list of features to create custom charts, see here: [Dimensions & Metrics Explorer Tool](https://ga-dev-tools.appspot.com/dimensions-metrics-explorer/)
 
 ## Troubleshooting 🌀
 
