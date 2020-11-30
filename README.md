@@ -10,15 +10,15 @@
 
 ## Table of Contents 📑
 
-- [GA API's](#ga-apis)
-	- [Google Analytics 4 Admin API](#google-analytics-4-admin-api)
-	- [Google Analytics 4 Data API](#google-analytics-4-data-api)
-    - [Google Analytics 4 Reporting API v4](#google-analytics-4-data-api)
-- [Vendor Packages](#vendor-packages)
-- [Enhancements](#enhancements)
-- [Goals of this plugin](#goals-of-this-plugin)
-- [Installation](#installation)
-	- [Step 1 - Create a client ID](#step-1---create-a-client-id)
+- [GA API's](#ga-apis-%EF%B8%8F)
+	- [Google Analytics 4 Admin API](https://github.com/ayumi-cloud/ga4#google-analytics-4-admin-api-%EF%B8%8F)
+	- [Google Analytics 4 Data API](https://github.com/ayumi-cloud/ga4#google-analytics-4-data-api-%EF%B8%8F)
+    - [Google Analytics 4 Reporting API v4](https://github.com/ayumi-cloud/ga4#google-analytics-4-reporting-api-v4-%EF%B8%8F)
+- [Vendor Packages](https://github.com/ayumi-cloud/ga4#vendor-packages-)
+- [Enhancements](https://github.com/ayumi-cloud/ga4#enhancements-)
+- [Goals of this plugin](https://github.com/ayumi-cloud/ga4#goals-of-this-plugin-)
+- [Installation](https://github.com/ayumi-cloud/ga4#installation)
+	- [Step 1 - Create a client ID](https://github.com/ayumi-cloud/ga4#step-1---create-a-client-id)
 	- [Step 2 - Configure Google Analytics](#step-2---configure-google-analytics)
 	- [Step 3 - Configure the back-end area](#step-3---configure-the-back-end-area)
 - [Optional Components](#optional-components)
@@ -79,7 +79,7 @@ https://developers.google.com/analytics/devguides/reporting/core/v4
 
 <p><img src="https://github.com/ayumi-cloud/ga4/blob/master/assets/images/dashboard-1.png"></p>
 
-## Installation
+## Installation ❤️
 
 ### Step 1 - Create a client ID
 
@@ -233,6 +233,6 @@ If you discover any security related issues, please open an issue! We will try a
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-[⬆ back to top](#table-of-contents)
+[⬆ back to top](#table-of-contents-)
 
-<p align="center"><img src="https://github.com/ayumi-cloud/ga4/blob/master/src/assets/images/luv.png"></p>
+<p align="center"><img src="https://github.com/ayumi-cloud/ga4/blob/master/assets/images/luv.png"></p>
