@@ -156,6 +156,40 @@ Then add the plugin's tracking code to your mobile website just after the `<body
 {% component 'gaAmpTracker' %}
 ```
 
+## Adding Custom Charts
+
+### Bar Charts
+Bar charts are great for comparing values against each other. In this example, we'll create a bar chart to show how many users are visiting our site in the 10 most common cities.
+
+| Row                | Value      |
+| :----------------- | :--------- |
+| Widget Title       | Top Cities |
+| Dimension          | ga:city    |
+| Metric             | ga:users   |
+| Results to display | 10         |
+
+### Pie Charts
+Pie charts are useful for displaying the make up of data as a whole. Here we'll create a pie chart comparing the number of returning visitors to first time visitors.
+
+| Row                | Value         |
+| :----------------- | :------------ |
+| Widget Title       | Visitor Types |
+| Dimension          | ga:userType   |
+| Metric             | ga:sessions   |
+
+### Percentage Charts
+Percentage charts will display the make up of data as a percentage of it's total. In this final example, we'll create a percentage chart to display how much of our website's traffic is coming from various device categories.
+
+| Row                | Value             |
+| :----------------- | :---------------- |
+| Widget Title       | Device Overview   |
+| Dimension          | ga:deviceCategory |
+| Metric             | ga:visits         |
+| Dimension Label    | Device            |
+| Metric Label       | Visits            |
+
+- For the full list of features to create custom charts, see here: [Dimensions & Metrics Explorer Tool](https://ga-dev-tools.appspot.com/dimensions-metrics-explorer/)
+
 ## Troubleshooting 🌀
 
 ### Fix for Windows / XAMPP 💊
