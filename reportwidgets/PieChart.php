@@ -22,7 +22,7 @@ class PieChart extends ReportWidgetBase
         return [
             'title' => [
                 'title'             => 'google.ga4::lang.piechart.widget_title',
-                'default'           => 'Pie Chart',
+                'default'           => 'Pie Chart', //................... lang
                 'type'              => 'string',
                 'validationPattern' => '^.+$',
                 'validationMessage' => 'google.ga4::lang.piechart.title_required'
