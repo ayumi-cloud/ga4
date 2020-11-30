@@ -42,6 +42,20 @@ https://developers.google.com/analytics/devguides/config/admin/v1
 
 https://developers.google.com/analytics/devguides/reporting/data/v1
 
+### Google Analytics 4 Reporting API v4
+
+https://developers.google.com/analytics/devguides/reporting/core/v4
+
+## Vendor Packages
+
+- [Guzzle, PHP HTTP client](https://github.com/guzzle/guzzle)
+
+**Installed version**: 7.2.0 or greater.
+
+- [Google APIs Client Library for PHP](https://github.com/googleapis/google-api-php-client)
+
+**Installed version**: 2.7.0 or greater.
+
 ## Enhancements
 
 - This plugin has been optimized to work a long side modern browsers that support the **back/forward cache** (bfcache) api. To learn more about bfcache, see these resources:
