@@ -8,7 +8,7 @@
 
 <p><img src="https://github.com/ayumi-cloud/ga4/blob/master/assets/images/banner.png"></p>
 
-## Contents 📑
+## Table of Contents 📑
 
 - [GA API's](#ga-apis)
 	- [Google Analytics 4 Admin API](#google-analytics-4-admin-api)
