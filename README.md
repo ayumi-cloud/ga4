@@ -36,7 +36,7 @@ GA4 is the latest version of Google Analytics. Since it is the 4th version, it i
 - [Adding Custom Charts](#adding-custom-charts-)
 	- [Bar Charts](#bar-charts-)
 	- [Pie Charts](#pie-charts-)
-	- [Percentage Charts](#percentage-charts-)
+	- [Line Charts](#line-charts-)
 - [Troubleshooting](#troubleshooting-)
 	- [Fix for Windows / XAMPP](#fix-for-windows--xampp-)
 - [Browser Support](#browser-support-)
@@ -183,9 +183,9 @@ Pie charts are useful for displaying the make up of data as a whole. Here we'll 
 | Dimension          | ga:userType   |
 | Metric             | ga:sessions   |
 
-### Percentage Charts 📉
+### Line Charts 📉
 
-Percentage charts will display the make up of data as a percentage of it's total. In this final example, we'll create a percentage chart to display how much of our website's traffic is coming from various device categories.
+A line chart is a graphical representation of an asset's historical price action that connects a series of data points with a continuous line. In this final example, we'll create a line chart to display how much of our website's traffic is coming from various device categories.
 
 | Row                | Value             |
 | :----------------- | :---------------- |
