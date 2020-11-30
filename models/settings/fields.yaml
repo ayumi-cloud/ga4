@@ -1,27 +1,32 @@
 fields:
+
+    # API Details
+
     gapi_key:
         span: left
-        label: rainlab.googleanalytics::lang.settings.gapi_key
+        label: google.ga4::lang.settings.gapi_key
         type: fileupload
-        commentAbove: rainlab.googleanalytics::lang.settings.gapi_key_comment
+        commentAbove: google.ga4::lang.settings.gapi_key_comment
         mode: file
         fileTypes: json
 
     profile_id:
         span: right
-        label: rainlab.googleanalytics::lang.settings.profile_id
-        commentAbove: rainlab.googleanalytics::lang.settings.profile_id_comment
+        label: google.ga4::lang.settings.profile_id
+        commentAbove: google.ga4::lang.settings.profile_id_comment
+
+    # GA User Settings
 
     measurement_id:
-        tab: rainlab.googleanalytics::lang.strings.tracking
+        tab: google.ga4::lang.strings.tracking
         span: left
-        label: rainlab.googleanalytics::lang.settings.tracking_id
-        commentAbove: rainlab.googleanalytics::lang.settings.tracking_id_comment
+        label: google.ga4::lang.settings.tracking_id
+        commentAbove: google.ga4::lang.settings.tracking_id_comment
 
     conversion_id:
-        tab: rainlab.googleanalytics::lang.strings.tracking
+        tab: google.ga4::lang.strings.tracking
         span: right
-        label: rainlab.googleanalytics::lang.settings.tracking_id
-        commentAbove: rainlab.googleanalytics::lang.settings.tracking_id_comment
+        label: google.ga4::lang.settings.tracking_id
+        commentAbove: google.ga4::lang.settings.tracking_id_comment
 
     # Add consent feature

@@ -1,12 +1,13 @@
-<?php namespace RainLab\GoogleAnalytics\Models;
+<?php 
+
+declare(strict_types=1);
+
+namespace Google\GA4\Models;
 
 use October\Rain\Database\Model;
 
 /**
  * Google Analytics settings model
- *
- * @package system
- * @author Alexey Bobkov, Samuel Georges
  *
  */
 class Settings extends Model
@@ -15,7 +16,7 @@ class Settings extends Model
 
     public $implement = ['System.Behaviors.SettingsModel'];
 
-    public $settingsCode = 'rainlab_googleanalytics_settings';
+    public $settingsCode = 'google_ga4_settings';
 
     public $settingsFields = 'fields.yaml';
 
@@ -27,10 +28,24 @@ class Settings extends Model
      * Validation rules
      */
     public $rules = [
-        'gapi_key'   => 'required_with:profile_id',
-        'profile_id'   => 'required_with:gapi_key'
+        // API Details
+        'gapi_key'   => 'required_with:profile_id', //..............update these things with better val rules
+        'profile_id' => 'required_with:gapi_key',
+        
+        // Google analytics measurement id
+        'measurement_id'    => [ 'required', 'regex:/(^[a-zA-Z0-9\s\-]+$)+/', 'max:50' ],
+        
+        // Google ads conversion tracking
+        'conversion_id'     => [ 'nullable', 'regex:/(^[a-zA-Z0-9\s\-]+$)+/', 'max:50' ],
+        'conversion_label'  => [ 'nullable', 'regex:/(^[a-zA-Z0-9\s\-]+$)+/', 'max:50' ],
+        
+        // GA Consent option to be added
+        
     ];
 
+    /**
+     * Default values
+     */
     public function initSettingsData()
     {
         //$this->domain_name = 'auto';
@@ -38,3 +53,5 @@ class Settings extends Model
         //$this->force_ssl = false;
     }
 }
+
+
