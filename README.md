@@ -15,7 +15,7 @@ GA4 is the latest version of Google Analytics. Since it is the 4th version, it i
 - **The first version of Google Analytics (GA1)** is the Classic Google Analytics (uses the `ga.js` JavaScript library).
 - **The second version of Google Analytics (GA2)** is the Universal Analytics (`analytics.js` JavaScript library).
 - **The third version of Google Analytics (GA3)** is the (`gtag.js` JavaScript library).
-- **The fourth version of Google Analytics (GA4)** also uses the `gtag.js` library but uses a new **measurement model** called `Event+Parameter` model.
+- **The fourth version of Google Analytics (GA4)** also uses the `gtag.js` library but uses a new **measurement model** called `Event + Parameter` model (which is user-centric) instead of the traditional `Session + Pageviews` centric measurement model.
 
 ## Table of Contents 📑
 
