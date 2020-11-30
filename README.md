@@ -8,11 +8,13 @@
 
 <p><img src="https://github.com/ayumi-cloud/ga4/blob/master/assets/images/banner.png"></p>
 
-## Contents
+## Contents 📑
 
 - [GA API's](#ga-apis)
 	- [Google Analytics 4 Admin API](#google-analytics-4-admin-api)
 	- [Google Analytics 4 Data API](#google-analytics-4-data-api)
+    - [Google Analytics 4 Reporting API v4](#google-analytics-4-data-api)
+- [Vendor Packages](#vendor-packages)
 - [Enhancements](#enhancements)
 - [Goals of this plugin](#goals-of-this-plugin)
 - [Installation](#installation)
@@ -27,26 +29,27 @@
 - [Browser Support](#security)
 - [Changelog](#changelog)
 - [Contributions, Feature Requests and Feedback](#contributions-feature-requests-and-feedback)
+	- [PSR](#psr-%EF%B8%8F)
 - [Security](#security)
 - [License](#license)
 
-## GA API's
+## GA API's 🛠️
 
 This Plugin adds GA4 to the backend dashboard and some custom components. The plugin uses the new API's:
 
-### Google Analytics 4 Admin API
+### Google Analytics 4 Admin API ⚙️
 
 https://developers.google.com/analytics/devguides/config/admin/v1
 
-### Google Analytics 4 Data API
+### Google Analytics 4 Data API ⚙️
 
 https://developers.google.com/analytics/devguides/reporting/data/v1
 
-### Google Analytics 4 Reporting API v4
+### Google Analytics 4 Reporting API v4 ⚙️
 
 https://developers.google.com/analytics/devguides/reporting/core/v4
 
-## Vendor Packages
+## Vendor Packages 🧰
 
 - [Guzzle, PHP HTTP client](https://github.com/guzzle/guzzle)
 
@@ -56,7 +59,7 @@ https://developers.google.com/analytics/devguides/reporting/core/v4
 
 **Installed version**: 2.7.0 or greater.
 
-## Enhancements
+## Enhancements ⭐
 
 - This plugin has been optimized to work a long side modern browsers that support the **back/forward cache** (bfcache) api. To learn more about bfcache, see these resources:
 
@@ -66,7 +69,7 @@ https://developers.google.com/analytics/devguides/reporting/core/v4
     
 ---
 
-## Goals of this plugin
+## Goals of this plugin 📢
 
 1. Add and update code from Rainlab Google Analytics plugin
 2. Add and update code from Google Analytics Extension plugin
@@ -120,9 +123,9 @@ The settings and instructions for authorizing Google have been drastically simpl
 
 1. If Tracking is not working initially, enter the value `auto` for the **Domain name** field. This is a fix for newborn Google Analytics accounts.
 
-## Optional Components
+## Optional Components 📀
 
-### Tracking Code for Desktop Websites
+### Tracking Code for Desktop Websites 💻
 
 To add the plugin's tracking code to your website add the component into the `<head>` section, using the following tag:
 
@@ -130,7 +133,7 @@ To add the plugin's tracking code to your website add the component into the `<h
 {% component 'gaTracker' %}
 ```
 
-### Tracking Code for Mobile Websites
+### Tracking Code for Mobile Websites 📱
 
 To add the plugin's tracking code to your mobile website add this code line into the `<head>` section of your website:
 
@@ -144,9 +147,9 @@ Then add the plugin's tracking code to your mobile website just after the `<body
 {% component 'gaAmpTracker' %}
 ```
 
-## Troubleshooting
+## Troubleshooting 🌀
 
-### Fix for Windows / XAMPP
+### Fix for Windows / XAMPP 💊
 
 **cURL error 60: SSL certificate problem: unable to get local issuer certificate**
 
@@ -160,7 +163,7 @@ Then add the plugin's tracking code to your mobile website just after the `<body
 
 3. Restart Apache
 
-## Browser Support
+## Browser Support ✅
 
 The GA4 plugin has been tested in the following browsers:
 
@@ -193,11 +196,11 @@ The GA4 plugin has been tested in the following browsers:
   </tr>
 </table>
 
-## Changelog
+## Changelog 🏆
 
 Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
 
-## Contributions, Feature Requests and Feedback
+## Contributions, Feature Requests and Feedback ✨
 
 We are actively inviting new contributors! To start, please read the [contribution guide](CONTRIBUTING.md).
 
@@ -222,10 +225,14 @@ This plugin uses some PSR standards to be the most interoperable possible:
 - [PSR-17](https://www.php-fig.org/psr/psr-17/) Standard factories to create PSR-7 objects.
 - [PSR-18](https://www.php-fig.org/psr/psr-18/) Standard interface to send a http request and return a response.
 
-## Security
+## Security 💥
 
 If you discover any security related issues, please open an issue! We will try and sort it out asap.
 
-## License
+## License 📄
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+
+[⬆ back to top](#table-of-contents)
+
+<p align="center"><img src="https://github.com/ayumi-cloud/ga4/blob/master/src/assets/images/luv.png"></p>
