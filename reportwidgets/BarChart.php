@@ -1,4 +1,8 @@
-<?php namespace Bedard\AnalyticsExtension\ReportWidgets;
+<?php 
+
+declare(strict_types=1);
+
+namespace Google\GA4\ReportWidgets;
 
 use Backend\Classes\ReportWidgetBase;
 
@@ -17,49 +21,49 @@ class BarChart extends ReportWidgetBase
     {
         return [
             'title' => [
-                'title'             => 'bedard.analyticsextension::lang.barchart.widget_title',
+                'title'             => 'google.ga4::lang.barchart.widget_title',
                 'default'           => 'Bar Chart',
                 'type'              => 'string',
                 'validationPattern' => '^.+$',
-                'validationMessage' => 'bedard.analyticsextension::lang.barchart.widget_title_required'
+                'validationMessage' => 'google.ga4::lang.barchart.widget_title_required'
             ],
             'dimension' => [
-                'title'             => 'bedard.analyticsextension::lang.barchart.dimension',
+                'title'             => 'google.ga4::lang.barchart.dimension',
                 'type'              => 'string',
                 'validationPattern' => '^ga:[a-zA-Z]+$',
-                'validationMessage' => 'bedard.analyticsextension::lang.barchart.invalid_dimension'
+                'validationMessage' => 'google.ga4::lang.barchart.invalid_dimension'
             ],
             'metric' => [
-                'title'             => 'bedard.analyticsextension::lang.barchart.metric',
+                'title'             => 'google.ga4::lang.barchart.metric',
                 'default'           => 'ga:visits',
                 'type'              => 'string',
                 'validationPattern' => '^ga:[a-zA-Z]+$',
-                'validationMessage' => 'bedard.analyticsextension::lang.barchart.invalid_metric'
+                'validationMessage' => 'google.ga4::lang.barchart.invalid_metric'
             ],
             'reportHeight' => [
-                'title'             => 'bedard.analyticsextension::lang.barchart.chart_height',
+                'title'             => 'google.ga4::lang.barchart.chart_height',
                 'default'           => '200',
                 'type'              => 'string',
                 'validationPattern' => '^[0-9]+$',
-                'validationMessage' => 'bedard.analyticsextension::lang.barchart.invalid_chart_height'
+                'validationMessage' => 'google.ga4::lang.barchart.invalid_chart_height'
             ],
             'legendAsTable' => [
-                'title'             => 'bedard.analyticsextension::lang.barchart.legend_as_table',
+                'title'             => 'google.ga4::lang.barchart.legend_as_table',
                 'type'              => 'checkbox',
                 'default'           => 1
             ],
             'days' => [
-                'title'             => 'bedard.analyticsextension::lang.barchart.days_to_display',
+                'title'             => 'google.ga4::lang.barchart.days_to_display',
                 'default'           => '30',
                 'type'              => 'string',
                 'validationPattern' => '^[0-9]+$'
             ],
             'number' => [
-                'title'             => 'bedard.analyticsextension::lang.barchart.results_to_display',
+                'title'             => 'google.ga4::lang.barchart.results_to_display',
                 'default'           => '10',
                 'type'              => 'string',
                 'validationPattern' => '^[0-9]+$',
-                'description'       => 'bedard.analyticsextension::lang.barchart.zero_displays_all'
+                'description'       => 'google.ga4::lang.barchart.zero_displays_all'
             ],
             'description' => [
                 'title'             => ''

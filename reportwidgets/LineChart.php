@@ -21,46 +21,46 @@ class LineChart extends ReportWidgetBase
     {
         return [
             'title' => [
-                'title'             => 'bedard.analyticsextension::lang.line.widget_title',
+                'title'             => 'google.ga4::lang.line.widget_title',
                 'default'           => 'Line Chart',
                 'type'              => 'string',
                 'validationPattern' => '^.+$',
-                'validationMessage' => 'bedard.analyticsextension::lang.line.title_required'
+                'validationMessage' => 'google.ga4::lang.line.title_required'
             ],
             'dimension' => [
-                'title'             => 'bedard.analyticsextension::lang.line.dimension',
+                'title'             => 'google.ga4::lang.line.dimension',
                 'type'              => 'string',
                 'validationPattern' => '^ga:[a-zA-Z]+$',
-                'validationMessage' => 'bedard.analyticsextension::lang.line.invalid_dimension'
+                'validationMessage' => 'google.ga4::lang.line.invalid_dimension'
             ],
             'metric' => [
-                'title'             => 'bedard.analyticsextension::lang.line.metric',
+                'title'             => 'google.ga4::lang.line.metric',
                 'default'           => 'ga:visits',
                 'type'              => 'string',
                 'validationPattern' => '^ga:[a-zA-Z]+$',
-                'validationMessage' => 'bedard.analyticsextension::lang.line.invalid_metric'
+                'validationMessage' => 'google.ga4::lang.line.invalid_metric'
             ],
             'dimensionLabel' => [
-                'title'             => 'bedard.analyticsextension::lang.line.dimension_label',
+                'title'             => 'google.ga4::lang.line.dimension_label',
                 'type'              => 'string'
             ],
             'metricLabel' => [
-                'title'             => 'bedard.analyticsextension::lang.line.metric_label',
+                'title'             => 'google.ga4::lang.line.metric_label',
                 'type'              => 'string',
                 'default'           => 'Visits'
             ],
             'days' => [
-                'title'             => 'bedard.analyticsextension::lang.line.days_to_display',
+                'title'             => 'google.ga4::lang.line.days_to_display',
                 'default'           => '30',
                 'type'              => 'string',
                 'validationPattern' => '^[0-9]+$'
             ],
             'number' => [
-                'title'             => 'bedard.analyticsextension::lang.line.results_to_display',
+                'title'             => 'google.ga4::lang.line.results_to_display',
                 'default'           => '10',
                 'type'              => 'string',
                 'validationPattern' => '^[0-9]+$',
-                'description'       => 'bedard.analyticsextension::lang.line.zero_displays_all'
+                'description'       => 'google.ga4::lang.line.zero_displays_all'
             ]
         ];
     }
