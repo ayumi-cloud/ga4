@@ -2,6 +2,8 @@ fields:
 
     # API Details
 
+    ### Add Info hint
+
     gapi_key:
         span: left
         label: google.ga4::lang.settings.gapi_key
@@ -15,18 +17,32 @@ fields:
         label: google.ga4::lang.settings.profile_id
         commentAbove: google.ga4::lang.settings.profile_id_comment
 
-    # GA User Settings
+    # GA Tracking IDs
+
+    ### Add Info hint
 
     measurement_id:
-        tab: google.ga4::lang.strings.tracking
         span: left
-        label: google.ga4::lang.settings.tracking_id
-        commentAbove: google.ga4::lang.settings.tracking_id_comment
+        label: google.ga4::lang.settings.measurement_id
+        commentAbove: google.ga4::lang.settings.measurement_id_comment
+
+    stream_id:
+        span: right
+        label: google.ga4::lang.settings.stream_id
+        commentAbove: google.ga4::lang.settings.stream_id_comment
+
+    # Google Ads Conversion Tracking
+
+    ### Add Info hint
 
     conversion_id:
-        tab: google.ga4::lang.strings.tracking
-        span: right
-        label: google.ga4::lang.settings.tracking_id
-        commentAbove: google.ga4::lang.settings.tracking_id_comment
+        span: left
+        label: google.ga4::lang.settings.conversion_id
+        commentAbove: google.ga4::lang.settings.conversion_id_comment
+
+    conversion_label:
+        span: left
+        label: google.ga4::lang.settings.conversion_label
+        commentAbove: google.ga4::lang.settings.conversion_label_comment
 
     # Add consent feature
