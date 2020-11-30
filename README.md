@@ -8,14 +8,14 @@
 >
 > **No guarantee given to be finished** - you're welcome to add code updates and ideas!
 
+<p><img src="https://github.com/ayumi-cloud/ga4/blob/master/assets/images/banner.png"></p>
+
 GA4 is the latest version of Google Analytics. Since it is the 4th version, it is called as GA4.
 
 - **The first version of Google Analytics (GA1)** is the Classic Google Analytics (uses the `ga.js` JavaScript library).
 - **The second version of Google Analytics (GA2)** is the Universal Analytics (`analytics.js` JavaScript library).
 - **The third version of Google Analytics (GA3)** is the (`gtag.js` JavaScript library).
 - **The fourth version of Google Analytics (GA4)** also uses the `gtag.js` library but uses a new **measurement model** called `Event+Parameter` model.
-
-<p><img src="https://github.com/ayumi-cloud/ga4/blob/master/assets/images/banner.png"></p>
 
 ## Table of Contents 📑
 
