@@ -47,17 +47,20 @@ return [
         'widgets'  => 'View dashboard widgets',
     ],
     'strings' => [
-        'plugin_desc'    => 'Provides the Google Analytics tracking and reporting.',
-        'notconfigured'  => 'Google Analytics API access is not configured. Please configure it on the System / Settings / Google Analytics page.',
-        'keynotuploaded' => 'Google Analytics API private key is not uploaded. Please configure Google Analytics access on the System / Settings / Google Analytics page.',
-        'tracker'        => 'Google Analytics tracker',
-        'tracking'       => 'Tracking',
-        'tracker_desc'   => 'Outputs a tracking code on a page.',
-        'settings_desc'  => 'Configure Google Analytics API code and tracking options.',
-        'page_url'       => 'Page URL',
-        'pageviews'      => 'Pageviews',
-        'current'        => 'Current',
-        'goal'           => 'Goal',
+        'plugin_desc'      => 'Provides the Google Analytics tracking and reporting.',
+        'notconfigured'    => 'Google Analytics API access is not configured. Please configure it on the System / Settings / Google Analytics page.',
+        'keynotuploaded'   => 'Google Analytics API private key is not uploaded. Please configure Google Analytics access on the System / Settings / Google Analytics page.',
+        'tracker'          => 'Google Analytics tracker',
+        'tracking'         => 'Tracking',
+        'tracker_desc'     => 'Outputs a tracking code on a page.',
+        'settings_desc'    => 'Configure Google Analytics API code and tracking options.',
+        'page_url'         => 'Page URL',
+        'pageviews'        => 'Pageviews',
+        'current'          => 'Current',
+        'goal'             => 'Goal',
+        'barchart_label'   => 'Google Analytics custom bar chart',
+        'line_label'       => 'Google Analytics custom line chart',
+        'piechart_label'   => 'Google Analytics custom pie chart',
     ],
     'settings' => [
         'project_name'             => 'Google API Project name',
@@ -98,4 +101,9 @@ return [
     'config' => [
         'label' => 'Google Analytics 4',
     ],
+    'errors' => [
+        'invalid_days'      => 'Invalid days value: ',
+        'invalid_dimension' => 'Invalid dimension value: ',
+        'invalid_metric'    => 'Invalid metric value: ',
+    ]
 ];

@@ -32,17 +32,20 @@ return [
         'settings' => 'Åtkomstinställningar',
     ],
     'strings'     => [
-        'plugin_desc'    => 'Föreser rapporter från Google Analytics spårning.',
-        'notconfigured'  => 'API-åtkomsten för Google Analytics är inte konfigurerad. Var vänligen konfigurera det i sidan under System / Inställningar / Google Analytics.',
-        'keynotuploaded' => 'Den privata API-nyckeln för Google Analytics är inte uppladdad. Var vänligen konfigurera det i sidan under System / Inställningar / Google Analytics.',
-        'tracker'        => 'Google Analytics spårning',
-        'tracking'       => 'Spårning',
-        'tracker_desc'   => 'Utmatar en spårningskod på en sida.',
-        'settings_desc'  => 'Konfigurera API-koden och spårningsinställningar för Google Analytics.',
-        'page_url'       => 'Sid-URL',
-        'pageviews'      => 'Sidvisningar',
-        'current'        => 'Nuvarande',
-        'goal'           => 'Mål'
+        'plugin_desc'      => 'Föreser rapporter från Google Analytics spårning.',
+        'notconfigured'    => 'API-åtkomsten för Google Analytics är inte konfigurerad. Var vänligen konfigurera det i sidan under System / Inställningar / Google Analytics.',
+        'keynotuploaded'   => 'Den privata API-nyckeln för Google Analytics är inte uppladdad. Var vänligen konfigurera det i sidan under System / Inställningar / Google Analytics.',
+        'tracker'          => 'Google Analytics spårning',
+        'tracking'         => 'Spårning',
+        'tracker_desc'     => 'Utmatar en spårningskod på en sida.',
+        'settings_desc'    => 'Konfigurera API-koden och spårningsinställningar för Google Analytics.',
+        'page_url'         => 'Sid-URL',
+        'pageviews'        => 'Sidvisningar',
+        'current'          => 'Nuvarande',
+        'goal'             => 'Mål',
+        'barchart_label'   => 'Google Analytics custom bar chart',
+        'line_label'       => 'Google Analytics custom line chart',
+        'piechart_label'   => 'Google Analytics custom pie chart',
     ],
     'settings'    => [
         'project_name'             => 'Google API projektnamn',
@@ -79,4 +82,9 @@ return [
     'config' => [
         'label' => 'Google Analytics 4',
     ],
+    'errors' => [
+        'invalid_days'      => 'Invalid days value: ',
+        'invalid_dimension' => 'Invalid dimension value: ',
+        'invalid_metric'    => 'Invalid metric value: ',
+    ]
 ];

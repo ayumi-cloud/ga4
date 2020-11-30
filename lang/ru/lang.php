@@ -46,17 +46,20 @@ return [
         'settings' => 'Доступ к настройкам',
     ],
     'strings'     => [
-        'plugin_desc'    => 'Предоставляет возможность использовать код отслеживания и отчеты Google Analytics.',
-        'notconfigured'  => 'Google Analytics API не настроен. Пожалуйста настройте его на странице Настройки / Google Analytics.',
-        'keynotuploaded' => 'Приватный ключ Google Analytics API не загружен. Пожалуйста настройке доступ к Google Analytics API на странице Настройки / Google Analytics.',
-        'tracker'        => 'Трекер Google Analytics',
-        'tracking'       => 'Отслеживание',
-        'tracker_desc'   => 'Выводит код отслеживания на странице.',
-        'settings_desc'  => 'Настройте Google Analytics API и опции отслеживания.',
-        'page_url'       => 'URL страницы',
-        'pageviews'      => 'Просмотров',
-        'current'        => 'Текущие',
-        'goal'           => 'Цель'
+        'plugin_desc'      => 'Предоставляет возможность использовать код отслеживания и отчеты Google Analytics.',
+        'notconfigured'    => 'Google Analytics API не настроен. Пожалуйста настройте его на странице Настройки / Google Analytics.',
+        'keynotuploaded'   => 'Приватный ключ Google Analytics API не загружен. Пожалуйста настройке доступ к Google Analytics API на странице Настройки / Google Analytics.',
+        'tracker'          => 'Трекер Google Analytics',
+        'tracking'         => 'Отслеживание',
+        'tracker_desc'     => 'Выводит код отслеживания на странице.',
+        'settings_desc'    => 'Настройте Google Analytics API и опции отслеживания.',
+        'page_url'         => 'URL страницы',
+        'pageviews'        => 'Просмотров',
+        'current'          => 'Текущие',
+        'goal'             => 'Цель',
+        'barchart_label'   => 'Google Analytics custom bar chart',
+        'line_label'       => 'Google Analytics custom line chart',
+        'piechart_label'   => 'Google Analytics custom pie chart',
     ],
     'settings'    => [
         'project_name'             => 'Имя проекта Google API',
@@ -93,4 +96,9 @@ return [
     'config' => [
         'label' => 'Google Analytics 4',
     ],
+    'errors' => [
+        'invalid_days'      => 'Invalid days value: ',
+        'invalid_dimension' => 'Invalid dimension value: ',
+        'invalid_metric'    => 'Invalid metric value: ',
+    ]
 ];

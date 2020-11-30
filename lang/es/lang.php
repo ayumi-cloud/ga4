@@ -46,17 +46,20 @@ return [
         'settings' => 'Acceder a la configuración',
     ],
     'strings'     => [
-        'plugin_desc'    => 'Provee seguimiento e informes de Google Analytics.',
-        'notconfigured'  => 'No se ha configurado el acceso a la API de Google Analytics. Por favor configúrela en la página Sistema / Configuración / Google Analytics.',
-        'keynotuploaded' => 'No se ha cargado la clave privada del API de Google Analytics. Por favor configure el acceso a Google Analytics en la página Sistema / Configuración / Google Analytics.',
-        'tracker'        => 'Seguimiento de Google Analytics',
-        'tracking'       => 'Siguiendo',
-        'tracker_desc'   => 'Escribe el código de seguimiento de tráfico en una página.',
-        'settings_desc'  => 'Configura las opciones de seguimiento y del API de Google Analytics.',
-        'page_url'       => 'URL de la Página',
-        'pageviews'      => 'Páginas vistas',
-        'current'        => 'Actual',
-        'goal'           => 'Objetivo'
+        'plugin_desc'      => 'Provee seguimiento e informes de Google Analytics.',
+        'notconfigured'    => 'No se ha configurado el acceso a la API de Google Analytics. Por favor configúrela en la página Sistema / Configuración / Google Analytics.',
+        'keynotuploaded'   => 'No se ha cargado la clave privada del API de Google Analytics. Por favor configure el acceso a Google Analytics en la página Sistema / Configuración / Google Analytics.',
+        'tracker'          => 'Seguimiento de Google Analytics',
+        'tracking'         => 'Siguiendo',
+        'tracker_desc'     => 'Escribe el código de seguimiento de tráfico en una página.',
+        'settings_desc'    => 'Configura las opciones de seguimiento y del API de Google Analytics.',
+        'page_url'         => 'URL de la Página',
+        'pageviews'        => 'Páginas vistas',
+        'current'          => 'Actual',
+        'goal'             => 'Objetivo',
+        'barchart_label'   => 'Google Analytics custom bar chart',
+        'line_label'       => 'Google Analytics custom line chart',
+        'piechart_label'   => 'Google Analytics custom pie chart',
     ],
     'settings'    => [
         'project_name'             => 'Nombre de proyecto API de Google',
@@ -97,4 +100,9 @@ return [
     'config' => [
         'label' => 'Google Analytics 4',
     ],
+    'errors' => [
+        'invalid_days'      => 'Invalid days value: ',
+        'invalid_dimension' => 'Invalid dimension value: ',
+        'invalid_metric'    => 'Invalid metric value: ',
+    ]
 ];

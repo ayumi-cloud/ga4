@@ -32,17 +32,20 @@ return [
         'settings' => 'دسترسی به تنظیمات',
     ],
     'strings'     => [
-        'plugin_desc'    => 'محیا سازی امکان دسترسی به سرویش تجزیه و تحلیل ترافیک گوگل.',
-        'notconfigured'  => 'تنظیمات دسترسی به API سیستم تجزیه و تحلیل ترافیک گوگل وارد نشده اند. لطفا این اطلاعات را در منوی سیستم / تنظیمات / صفحه تجزیه و تحلیل ترافیک گوگل وارد نمایید.',
-        'keynotuploaded' => 'کلید خصوصی سیستم تجزیه و تحلیل ترافیک گوگل آپلود نشده است. لطفا این کلید را در منوی سیستم / تنظیمات/ تجزیه و تحلیل ترافیک گوگل وارد نمایید.',
-        'tracker'        => 'ردیاب تجزیه و تحلیل ترافیک گوگل',
-        'tracking'       => 'ردیابی',
-        'tracker_desc'   => 'وارد کردن کد ردیابی در صفحه',
-        'settings_desc'  => 'تنظیم کد API و گزینه های ردیابی سیستم تجزیه و تحلیل ترافیک گوگل.',
-        'page_url'       => 'آدرس صفحه',
-        'pageviews'      => 'نمایش های صفحه',
-        'current'        => 'جاری',
-        'goal'           => 'هدف'
+        'plugin_desc'      => 'محیا سازی امکان دسترسی به سرویش تجزیه و تحلیل ترافیک گوگل.',
+        'notconfigured'    => 'تنظیمات دسترسی به API سیستم تجزیه و تحلیل ترافیک گوگل وارد نشده اند. لطفا این اطلاعات را در منوی سیستم / تنظیمات / صفحه تجزیه و تحلیل ترافیک گوگل وارد نمایید.',
+        'keynotuploaded'   => 'کلید خصوصی سیستم تجزیه و تحلیل ترافیک گوگل آپلود نشده است. لطفا این کلید را در منوی سیستم / تنظیمات/ تجزیه و تحلیل ترافیک گوگل وارد نمایید.',
+        'tracker'          => 'ردیاب تجزیه و تحلیل ترافیک گوگل',
+        'tracking'         => 'ردیابی',
+        'tracker_desc'     => 'وارد کردن کد ردیابی در صفحه',
+        'settings_desc'    => 'تنظیم کد API و گزینه های ردیابی سیستم تجزیه و تحلیل ترافیک گوگل.',
+        'page_url'         => 'آدرس صفحه',
+        'pageviews'        => 'نمایش های صفحه',
+        'current'          => 'جاری',
+        'goal'             => 'هدف',
+        'barchart_label'   => 'Google Analytics custom bar chart',
+        'line_label'       => 'Google Analytics custom line chart',
+        'piechart_label'   => 'Google Analytics custom pie chart',
     ],
     'settings'    => [
         'project_name'             => 'نام پروژه API گوگل',
@@ -79,4 +82,9 @@ return [
     'config' => [
         'label' => 'Google Analytics 4',
     ],
+    'errors' => [
+        'invalid_days'      => 'Invalid days value: ',
+        'invalid_dimension' => 'Invalid dimension value: ',
+        'invalid_metric'    => 'Invalid metric value: ',
+    ]
 ];

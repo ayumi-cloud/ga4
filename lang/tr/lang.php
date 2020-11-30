@@ -46,17 +46,20 @@ return [
         'settings' => 'Ayarlara erişim',
     ],
     'strings'     => [
-        'plugin_desc'    => 'Google Analytics izleme ve raporlamasını sağlar.',
-        'notconfigured'  => 'Google Analytics API erişimi yapılandırılmadı. Lütfen Sistem / Ayarlar / Google Analytics sayfasından yapılandırın.',
-        'keynotuploaded' => 'Google Analytics API özel anahtarı yüklenmedi. Lütfen Sistem / Ayarlar / Google Analytics sayfasındaki Google Analytics erişimini yapılandırın.',
-        'tracker'        => 'Google Analytics takipçisi',
-        'tracking'       => 'Takipçi',
-        'tracker_desc'   => 'Sayfaya bir izleme kodu ekler.',
-        'settings_desc'  => 'Google Analytics API kodunu ve izleme seçeneklerini yapılandırın.',
-        'page_url'       => 'Sayfa URL\'si',
-        'pageviews'      => 'Sayfa Görüntüleme',
-        'current'        => 'Aktif',
-        'goal'           => 'Hedef',
+        'plugin_desc'      => 'Google Analytics izleme ve raporlamasını sağlar.',
+        'notconfigured'    => 'Google Analytics API erişimi yapılandırılmadı. Lütfen Sistem / Ayarlar / Google Analytics sayfasından yapılandırın.',
+        'keynotuploaded'   => 'Google Analytics API özel anahtarı yüklenmedi. Lütfen Sistem / Ayarlar / Google Analytics sayfasındaki Google Analytics erişimini yapılandırın.',
+        'tracker'          => 'Google Analytics takipçisi',
+        'tracking'         => 'Takipçi',
+        'tracker_desc'     => 'Sayfaya bir izleme kodu ekler.',
+        'settings_desc'    => 'Google Analytics API kodunu ve izleme seçeneklerini yapılandırın.',
+        'page_url'         => 'Sayfa URL\'si',
+        'pageviews'        => 'Sayfa Görüntüleme',
+        'current'          => 'Aktif',
+        'goal'             => 'Hedef',
+        'barchart_label'   => 'Google Analytics custom bar chart',
+        'line_label'       => 'Google Analytics custom line chart',
+        'piechart_label'   => 'Google Analytics custom pie chart',
     ],
     'settings'    => [
         'project_name'             => 'Google API Proje adı',
@@ -97,4 +100,9 @@ return [
     'config' => [
         'label' => 'Google Analytics 4',
     ],
+    'errors' => [
+        'invalid_days'      => 'Invalid days value: ',
+        'invalid_dimension' => 'Invalid dimension value: ',
+        'invalid_metric'    => 'Invalid metric value: ',
+    ]
 ];

@@ -45,13 +45,16 @@ return [
         'settings' => 'Přístup k nastavení',
     ],
     'strings'     => [
-        'plugin_desc'    => 'Poskytuje měření do Google Analytics a zobrazování statistik návštěvnosti.',
-        'notconfigured'  => 'Google Analytics API přístup není aktivní. Prosím nastavte ho na stránce System / Nastavení / Google Analytics.',
-        'keynotuploaded' => 'Google Analytics API privátní klíč není nahraný. Prosím nahrajte ho na stránce System / Nastavení / Google Analytics.',
-        'tracker'        => 'Google Analytics měřící kód',
-        'tracking'       => 'Měření',
-        'tracker_desc'   => 'Vypíše měřící kód na stránce.',
-        'settings_desc'  => 'Nastavte Google Analytics API kód a parametry měření.',
+        'plugin_desc'      => 'Poskytuje měření do Google Analytics a zobrazování statistik návštěvnosti.',
+        'notconfigured'    => 'Google Analytics API přístup není aktivní. Prosím nastavte ho na stránce System / Nastavení / Google Analytics.',
+        'keynotuploaded'   => 'Google Analytics API privátní klíč není nahraný. Prosím nahrajte ho na stránce System / Nastavení / Google Analytics.',
+        'tracker'          => 'Google Analytics měřící kód',
+        'tracking'         => 'Měření',
+        'tracker_desc'     => 'Vypíše měřící kód na stránce.',
+        'settings_desc'    => 'Nastavte Google Analytics API kód a parametry měření.',
+        'barchart_label'   => 'Google Analytics custom bar chart',
+        'line_label'       => 'Google Analytics custom line chart',
+        'piechart_label'   => 'Google Analytics custom pie chart',
     ],
     'settings'    => [
         'project_name'             => 'Název projektu v Google API',
@@ -88,4 +91,9 @@ return [
     'config' => [
         'label' => 'Google Analytics 4',
     ],
+    'errors' => [
+        'invalid_days'      => 'Invalid days value: ',
+        'invalid_dimension' => 'Invalid dimension value: ',
+        'invalid_metric'    => 'Invalid metric value: ',
+    ]
 ];

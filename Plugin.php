@@ -73,6 +73,21 @@ class Plugin extends PluginBase
                 'label'       => 'google.ga4::lang.report_widgets.jsEvents',
                 'context'     => 'dashboard',
                 'permissions' => ['google.ga4.view_widgets']
+            ],
+            'Google\GA4\ReportWidgets\BarChart' => [
+                'label'       => 'google.ga4::lang.strings.barchart_label',
+                'context'     => 'dashboard',
+                'permissions' => ['google.ga4.view_widgets']
+            ],
+            'Google\GA4\ReportWidgets\LineChart' => [
+                'label'       => 'google.ga4::lang.strings.line_label',
+                'context'     => 'dashboard',
+                'permissions' => ['google.ga4.view_widgets']
+            ],
+            'Google\GA4\ReportWidgets\PieChart' => [
+                'label'       => 'google.ga4::lang.strings.piechart_label',
+                'context'     => 'dashboard',
+                'permissions' => ['google.ga4.view_widgets']
             ]
         ];
     }

@@ -46,17 +46,20 @@ return [
         'settings' => 'Seadete juurdepääs',
     ],
     'strings'     => [
-        'plugin_desc'    => 'Google Analytics pakub jälgimist ja aruandlust.',
-        'notconfigured'  => 'Google Analyticsi API-juurdepääs pole konfigureeritud. Palun konfigureeri see System/Settings/Google Analytics lehel.',
-        'keynotuploaded' => 'Google Analytics API privaatvõtit pole üles laaditud. Palun konfigureeri Google Analyticsi juurdepääs System/Settings/Google Analytics lehel.',
-        'tracker'        => 'Google Analyticsi jälgija',
-        'tracking'       => 'Jälgimine',
-        'tracker_desc'   => 'Võimaldab lehel kuvada jälgimiskoodi.',
-        'settings_desc'  => 'Google Analyticsi API-koodi ja jälgimisvalikute seadistamine.',
-        'page_url'       => 'Lehe URL',
-        'pageviews'      => 'Lehevaatamisi',
-        'current'        => 'Praegu',
-        'goal'           => 'Siht'
+        'plugin_desc'      => 'Google Analytics pakub jälgimist ja aruandlust.',
+        'notconfigured'    => 'Google Analyticsi API-juurdepääs pole konfigureeritud. Palun konfigureeri see System/Settings/Google Analytics lehel.',
+        'keynotuploaded'   => 'Google Analytics API privaatvõtit pole üles laaditud. Palun konfigureeri Google Analyticsi juurdepääs System/Settings/Google Analytics lehel.',
+        'tracker'          => 'Google Analyticsi jälgija',
+        'tracking'         => 'Jälgimine',
+        'tracker_desc'     => 'Võimaldab lehel kuvada jälgimiskoodi.',
+        'settings_desc'    => 'Google Analyticsi API-koodi ja jälgimisvalikute seadistamine.',
+        'page_url'         => 'Lehe URL',
+        'pageviews'        => 'Lehevaatamisi',
+        'current'          => 'Praegu',
+        'goal'             => 'Siht',
+        'barchart_label'   => 'Google Analytics custom bar chart',
+        'line_label'       => 'Google Analytics custom line chart',
+        'piechart_label'   => 'Google Analytics custom pie chart',
     ],
     'settings'    => [
         'project_name'             => 'Google API Project nimi',
@@ -97,4 +100,9 @@ return [
     'config' => [
         'label' => 'Google Analytics 4',
     ],
+    'errors' => [
+        'invalid_days'      => 'Invalid days value: ',
+        'invalid_dimension' => 'Invalid dimension value: ',
+        'invalid_metric'    => 'Invalid metric value: ',
+    ]
 ];

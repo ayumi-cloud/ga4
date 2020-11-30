@@ -36,7 +36,7 @@ class Settings extends Model
         'measurement_id'    => [ 'required', 'regex:/(^[a-zA-Z0-9\s\-]+$)+/', 'max:50' ],
         
         // Google analytics stream id
-        'stream_id'         => [ 'required', 'regex:/(^[0-9]+$)+/', 'max:50' ],
+        'stream_id'         => [ 'nullable', 'regex:/(^[0-9]+$)+/', 'max:50' ],
         
         // Google ads conversion tracking
         'conversion_id'     => [ 'nullable', 'regex:/(^[a-zA-Z0-9\s\-]+$)+/', 'max:50' ],

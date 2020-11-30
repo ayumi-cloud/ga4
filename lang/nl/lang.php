@@ -28,10 +28,13 @@ return [
         'jsevents5'                   => 'There were no events in the selected interval.',
     ],
     'strings' => [
-        'page_url' => 'Pagina URL',
-        'pageviews' => 'Paginaweergaves',
-        'current' => 'Huidig',
-        'goal' => 'Goal'
+        'page_url'         => 'Pagina URL',
+        'pageviews'        => 'Paginaweergaves',
+        'current'          => 'Huidig',
+        'goal'             => 'Goal',
+        'barchart_label'   => 'Google Analytics custom bar chart',
+        'line_label'       => 'Google Analytics custom line chart',
+        'piechart_label'   => 'Google Analytics custom pie chart',
     ],
     'settings'    => [
         'project_name'             => 'Google API Projektin nimi',
@@ -70,4 +73,9 @@ return [
     'config' => [
         'label' => 'Google Analytics 4',
     ],
+    'errors' => [
+        'invalid_days'      => 'Invalid days value: ',
+        'invalid_dimension' => 'Invalid dimension value: ',
+        'invalid_metric'    => 'Invalid metric value: ',
+    ]
 ];
