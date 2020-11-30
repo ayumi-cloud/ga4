@@ -1,6 +1,6 @@
 # Google Analytics 4 integration plugin
 
-> ⚠️ WARNING - This plugin is not finished - waiting for Google to finish coding the sdK ⚠️ 
+> ⚠️ WARNING - This plugin is not finished - waiting for Google to finish coding the PHP SDK ⚠️ 
 >
 > Going to re-code everything from the ground up and add lots of new features
 >
