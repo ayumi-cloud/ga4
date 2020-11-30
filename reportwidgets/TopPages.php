@@ -1,15 +1,16 @@
-<?php namespace RainLab\GoogleAnalytics\ReportWidgets;
+<?php 
+
+declare(strict_types=1);
+
+namespace Google\GA4\ReportWidgets;
 
 use Backend\Classes\ReportWidgetBase;
-use RainLab\GoogleAnalytics\Classes\Analytics;
+use Google\GA4\Classes\Analytics;
 use ApplicationException;
 use Exception;
 
 /**
  * Google Analytics top pages widget.
- *
- * @package backend
- * @author Alexey Bobkov, Samuel Georges
  */
 class TopPages extends ReportWidgetBase
 {
@@ -28,24 +29,27 @@ class TopPages extends ReportWidgetBase
         return $this->makePartial('widget');
     }
 
+    /**
+     * Widget configuration.
+     */
     public function defineProperties()
     {
         return [
             'title' => [
                 'title'             => 'backend::lang.dashboard.widget_title_label',
-                'default'           => e(trans('rainlab.googleanalytics::lang.widgets.title_toppages')),
+                'default'           => e(trans('google.ga4::lang.widgets.title_toppages')),
                 'type'              => 'string',
                 'validationPattern' => '^.+$',
                 'validationMessage' => 'backend::lang.dashboard.widget_title_error'
             ],
             'days' => [
-                'title'             => 'rainlab.googleanalytics::lang.widgets.days',
+                'title'             => 'google.ga4::lang.widgets.days',
                 'default'           => '7',
                 'type'              => 'string',
                 'validationPattern' => '^[0-9]+$'
             ],
             'number' => [
-                'title'             => 'rainlab.googleanalytics::lang.widgets.toppages_number',
+                'title'             => 'google.ga4::lang.widgets.toppages_number',
                 'default'           => '5',
                 'type'              => 'string',
                 'validationPattern' => '^[0-9]+$'
@@ -53,11 +57,14 @@ class TopPages extends ReportWidgetBase
         ];
     }
 
+    /**
+     * Load GA4 API data.
+     */
     protected function loadData()
     {
         $days = $this->property('days');
         if (!$days)
-            throw new ApplicationException('Invalid days value: '.$days);
+            throw new ApplicationException(e(trans('google.ga4::lang.widgets.jsevents_error')).$days);
 
         $obj = Analytics::instance();
         $data = $obj->service->data_ga->get($obj->viewId, $days.'daysAgo', 'today', 'ga:pageviews', ['dimensions' => 'ga:pagePath', 'sort' => '-ga:pageviews']);

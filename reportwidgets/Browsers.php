@@ -1,15 +1,16 @@
-<?php namespace RainLab\GoogleAnalytics\ReportWidgets;
+<?php 
+
+declare(strict_types=1);
+
+namespace Google\GA4\ReportWidgets;
 
 use Backend\Classes\ReportWidgetBase;
-use RainLab\GoogleAnalytics\Classes\Analytics;
+use Google\GA4\Classes\Analytics;
 use ApplicationException;
 use Exception;
 
 /**
  * Google Analytics browsers overview widget.
- *
- * @package backend
- * @author Alexey Bobkov, Samuel Georges
  */
 class Browsers extends ReportWidgetBase
 {
@@ -28,47 +29,53 @@ class Browsers extends ReportWidgetBase
         return $this->makePartial('widget');
     }
 
+    /**
+     * Widget configuration.
+     */
     public function defineProperties()
     {
         return [
             'title' => [
                 'title'             => 'backend::lang.dashboard.widget_title_label',
-                'default'           => e(trans('rainlab.googleanalytics::lang.widgets.title_browsers')),
+                'default'           => e(trans('google.ga4::lang.widgets.title_browsers')),
                 'type'              => 'string',
                 'validationPattern' => '^.+$',
                 'validationMessage' => 'backend::lang.dashboard.widget_title_error'
             ],
             'reportHeight' => [
-                'title'             => 'rainlab.googleanalytics::lang.widgets.browsers_report_height',
+                'title'             => 'google.ga4::lang.widgets.browsers_report_height',
                 'default'           => '200',
                 'type'              => 'string',
                 'validationPattern' => '^[0-9]+$',
-                'validationMessage' => 'rainlab.googleanalytics::lang.widgets.browsers_report_height_validation'
+                'validationMessage' => 'google.ga4::lang.widgets.browsers_report_height_validation'
             ],
             'legendAsTable' => [
-                'title'             => 'rainlab.googleanalytics::lang.widgets.legend_as_table',
+                'title'             => 'google.ga4::lang.widgets.legend_as_table',
                 'type'              => 'checkbox',
                 'default'           => 1
             ],
             'days' => [
-                'title'             => 'rainlab.googleanalytics::lang.widgets.days',
+                'title'             => 'google.ga4::lang.widgets.days',
                 'default'           => '7',
                 'type'              => 'string',
                 'validationPattern' => '^[0-9]+$'
             ],
             'displayDescription' => [
-                'title'             => 'rainlab.googleanalytics::lang.widgets.display_description',
+                'title'             => 'google.ga4::lang.widgets.display_description',
                 'type'              => 'checkbox',
                 'default'           => 1
             ]
         ];
     }
 
+    /**
+     * Load GA4 API data.
+     */
     protected function loadData()
     {
         $days = $this->property('days');
         if (!$days)
-            throw new ApplicationException('Invalid days value: '.$days);
+            throw new ApplicationException(e(trans('google.ga4::lang.widgets.jsevents_error')).$days);
 
         $obj = Analytics::instance();
         $data = $obj->service->data_ga->get($obj->viewId, $days.'daysAgo', 'today', 'ga:visits', ['dimensions'=>'ga:browser', 'sort'=>'-ga:visits']);

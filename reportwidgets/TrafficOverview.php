@@ -1,15 +1,16 @@
-<?php namespace RainLab\GoogleAnalytics\ReportWidgets;
+<?php 
+
+declare(strict_types=1);
+
+namespace Google\GA4\ReportWidgets;
 
 use Backend\Classes\ReportWidgetBase;
-use RainLab\GoogleAnalytics\Classes\Analytics;
+use Google\GA4\Classes\Analytics;
 use ApplicationException;
 use Exception;
 
 /**
  * Google Analytics traffic overview widget.
- *
- * @package backend
- * @author Alexey Bobkov, Samuel Georges
  */
 class TrafficOverview extends ReportWidgetBase
 {
@@ -28,18 +29,21 @@ class TrafficOverview extends ReportWidgetBase
         return $this->makePartial('widget');
     }
 
+    /**
+     * Widget configuration.
+     */
     public function defineProperties()
     {
         return [
             'title' => [
                 'title'             => 'backend::lang.dashboard.widget_title_label',
-                'default'           => e(trans('rainlab.googleanalytics::lang.widgets.title_traffic_overview')),
+                'default'           => e(trans('google.ga4::lang.widgets.title_traffic_overview')),
                 'type'              => 'string',
                 'validationPattern' => '^.+$',
                 'validationMessage' => 'backend::lang.dashboard.widget_title_error'
             ],
             'days' => [
-                'title'             => 'rainlab.googleanalytics::lang.widgets.days',
+                'title'             => 'google.ga4::lang.widgets.days',
                 'default'           => '30',
                 'type'              => 'string',
                 'validationPattern' => '^[0-9]+$'
@@ -47,13 +51,16 @@ class TrafficOverview extends ReportWidgetBase
         ];
     }
 
+    /**
+     * Load GA4 API data.
+     */
     protected function loadData()
     {
         $obj = Analytics::instance();
 
         $days = $this->property('days');
         if (!$days) {
-            throw new ApplicationException('Invalid days value: '.$days);
+            throw new ApplicationException(e(trans('google.ga4::lang.widgets.jsevents_error')).$days);
         }
 
         $data = $obj->service->data_ga->get(
@@ -66,7 +73,7 @@ class TrafficOverview extends ReportWidgetBase
 
         $rows = $data->getRows();
         if (!$rows) {
-            throw new ApplicationException('No traffic found yet.');
+            throw new ApplicationException(e(trans('google.ga4::lang.widgets.jsevents_error3')));
         }
 
         $points = [];

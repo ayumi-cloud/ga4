@@ -1,15 +1,16 @@
-<?php namespace RainLab\GoogleAnalytics\ReportWidgets;
+<?php 
+
+declare(strict_types=1);
+
+namespace Google\GA4\ReportWidgets;
 
 use Backend\Classes\ReportWidgetBase;
-use RainLab\GoogleAnalytics\Classes\Analytics;
+use Google\GA4\Classes\Analytics;
 use ApplicationException;
 use Exception;
 
 /**
  * Google Analytics traffic goal widget.
- *
- * @package backend
- * @author Alexey Bobkov, Samuel Georges
  */
 class TrafficGoal extends ReportWidgetBase
 {
@@ -28,42 +29,48 @@ class TrafficGoal extends ReportWidgetBase
         return $this->makePartial('widget');
     }
 
+    /**
+     * Widget configuration.
+     */
     public function defineProperties()
     {
         return [
             'title' => [
                 'title'             => 'backend::lang.dashboard.widget_title_label',
-                'default'           => e(trans('rainlab.googleanalytics::lang.widgets.title_traffic_goal')),
+                'default'           => e(trans('google.ga4::lang.widgets.title_traffic_goal')),
                 'type'              => 'string',
                 'validationPattern' => '^.+$',
                 'validationMessage' => 'backend::lang.dashboard.widget_title_error'
             ],
             'days' => [
-                'title'             => 'rainlab.googleanalytics::lang.widgets.traffic_goal_days',
+                'title'             => 'google.ga4::lang.widgets.traffic_goal_days',
                 'default'           => '7',
                 'type'              => 'string',
                 'validationPattern' => '^[0-9]+$'
             ],
             'goal' => [
-                'title'             => 'rainlab.googleanalytics::lang.widgets.traffic_goal_goal',
-                'description'       => 'rainlab.googleanalytics::lang.widgets.traffic_goal_goal_description',
+                'title'             => 'google.ga4::lang.widgets.traffic_goal_goal',
+                'description'       => 'google.ga4::lang.widgets.traffic_goal_goal_description',
                 'default'           => '100',
                 'type'              => 'string',
                 'validationPattern' => '^[0-9]+$',
-                'validationMessage' => 'rainlab.googleanalytics::lang.widgets.traffic_goal_goal_validation'
+                'validationMessage' => 'google.ga4::lang.widgets.traffic_goal_goal_validation'
             ]
         ];
     }
 
+    /**
+     * Load GA4 API data.
+     */
     protected function loadData()
     {
         $days = $this->property('days');
         if (!$days)
-            throw new ApplicationException('Invalid days value: '.$days);
+            throw new ApplicationException(e(trans('google.ga4::lang.widgets.jsevents_error')).$days);
 
         $goal = $this->property('goal');
         if (!$goal)
-            throw new ApplicationException('Invalid goal value: '.$goal);
+            throw new ApplicationException(e(trans('google.ga4::lang.widgets.jsevents_error2')).$goal);
 
         $obj = Analytics::instance();
         $data = $obj->service->data_ga->get(

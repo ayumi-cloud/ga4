@@ -2,19 +2,18 @@
 
 declare(strict_types=1);
 
-namespace AsianSpa\MainWebPages\ReportWidgets;
+namespace Google\GA4\ReportWidgets;
 
 use Backend\Classes\ReportWidgetBase;
-use RainLab\GoogleAnalytics\Classes\Analytics;
+use Google\GA4\Classes\Analytics;
 use ApplicationException;
 use Exception;
 
 /**
  *  Google Analytics Javascript Error Events Widget
  *  This widget can show any events from GA, You can filter it by event category.
- *  @author Asian Spa
  */
-class GoogleAnalyticsJsEvents extends ReportWidgetBase
+class JsEvents extends ReportWidgetBase
 {
 
     /**
@@ -23,39 +22,9 @@ class GoogleAnalyticsJsEvents extends ReportWidgetBase
      */
     protected $filter = '';
 
-    public function defineProperties()
-    {
-        return [
-            'title' => [
-                'title'             => 'Widget title',
-                'default'           => 'Javascript and Ajax Error Checking',
-                'type'              => 'string',
-                'validationPattern' => '^.+$',
-                'validationMessage' => 'The Widget Title is required.'
-            ],
-            'category' => [
-                'title'             => 'Category filter',
-                'default'           => 'JavaScript Error, jQuery Error, jQuery Ajax Error',
-                'type'              => 'string',
-                'validationPattern' => '^.+$',
-                'validationMessage' => 'The category is required.'
-            ],
-            'days' => [
-                'title'             => 'Number of days to display data for',
-                'default'           => '30',
-                'type'              => 'string',
-                'validationPattern' => '^[0-9]+$'
-            ],
-            'number' => [
-                'title'             => 'Number of items to display',
-                'default'           => '10',
-                'type'              => 'string',
-                'validationPattern' => '^[0-9]+$'
-            ]
-        ];
-    }
-
-
+    /**
+     * Renders the widget.
+     */
     public function render()
     {
         try {
@@ -65,15 +34,52 @@ class GoogleAnalyticsJsEvents extends ReportWidgetBase
             $this->vars['error'] = $ex->getMessage();
         }
 
-        return $this->makePartial('googleanalyticsjsevents');
+        return $this->makePartial('widget');
     }
 
+    /**
+     * Widget configuration.
+     */
+    public function defineProperties()
+    {
+        return [
+            'title' => [
+                'title'             => 'google.ga4::lang.widgets.jsevents_name',
+                'default'           => e(trans('google.ga4::lang.widgets.jsevents_title')),
+                'type'              => 'string',
+                'validationPattern' => '^.+$',
+                'validationMessage' => 'google.ga4::lang.widgets.jsevents_valname',
+            ],
+            'category' => [
+                'title'             => 'google.ga4::lang.widgets.jsevents_catname',
+                'default'           => e(trans('google.ga4::lang.widgets.jsevents_category')),
+                'type'              => 'string',
+                'validationPattern' => '^.+$',
+                'validationMessage' => 'google.ga4::lang.widgets.jsevents_valcat',
+            ],
+            'days' => [
+                'title'             => 'google.ga4::lang.widgets.jsevents_daystitle',
+                'default'           => '30',
+                'type'              => 'string',
+                'validationPattern' => '^[0-9]+$'
+            ],
+            'number' => [
+                'title'             => 'google.ga4::lang.widgets.jsevents_numbertitle',
+                'default'           => '10',
+                'type'              => 'string',
+                'validationPattern' => '^[0-9]+$'
+            ]
+        ];
+    }
 
+    /**
+     * Load GA4 API data.
+     */
     protected function loadData()
     {
         $days = $this->property('days');
         if (!$days){
-            throw new ApplicationException('Invalid days value: '.$days);
+            throw new ApplicationException(e(trans('google.ga4::lang.widgets.jsevents_error')).$days);
         }
 
         $this->createFilter();
@@ -102,22 +108,20 @@ class GoogleAnalyticsJsEvents extends ReportWidgetBase
         $this->vars['total'] = $total;
     }
 	
-	
     /**
-     * Create filter string (see docs https://developers.google.com/analytics/devguides/reporting/core/v3/reference#filters)
+     * Create filter string (see docs https://developers.google.com/analytics/devguides/reporting/core/v4)
      * You can extend this function
      */
     public function createFilter()
     {
-        $categories = explode(',', $this->property('category', 'JavaScript Error, jQuery Error, jQuery Ajax Error'));
+        $categories = explode(',', $this->property('category', e(trans('google.ga4::lang.widgets.jsevents_category'))));
         foreach ($categories as $key => $category) {
             if (!empty($category)) {
                 $categories[$key] = 'ga:eventCategory=='.rawurlencode(trim($category));
             }else{
-                unset($categories[$key]); //if user sets empty category by typing two comma together, or last char comma
+                unset($categories[$key]); // If user sets empty category by typing two comma together, or last char comma
             }
         }
         $this->filter = implode(',', $categories);
     }
-	
 }
