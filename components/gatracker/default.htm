@@ -7,7 +7,11 @@ function gtag() {
 gtag("js", new Date());
 
 gtag("config", "{{ __SELF__.measurementId }}");
-gtag("config", "{{ __SELF__.conversionId }}"); // Wrap in an if statement
+
+<?php 
+    $conversionId = __SELF__.conversionId ?? '';
+    if (!empty($conversionId)) { ?>gtag("config", "{{ __SELF__.conversionId }}");
+<?php } ?>
 
 // Send a pageview when the page is first loaded.
 gtag("event", "page_view");
