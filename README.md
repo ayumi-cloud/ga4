@@ -24,7 +24,6 @@ GA4 is the latest version of Google Analytics. Since it is the 4th version, it i
     - [Google Analytics 4 Reporting API v4](#google-analytics-4-reporting-api-v4-%EF%B8%8F)
 - [Vendor Packages](#vendor-packages-)
 - [Enhancements](#enhancements-)
-- [Goals of this plugin](#goals-of-this-plugin-)
 - [Installation](#installation-%EF%B8%8F)
 	- [Step 1 - Create a client ID](#step-1---create-a-client-id)
 	- [Step 2 - Configure Google Analytics](#step-2---configure-google-analytics)
@@ -95,16 +94,6 @@ https://developers.google.com/analytics/devguides/reporting/core/v4
     [Exploring a back/forward cache for Chrome](https://developers.google.com/web/updates/2019/02/back-forward-cache)
     
     [Browser Back/Forward Caches and their Benefit to Web Performance](https://dev.to/paulcalvano/browser-back-forward-caches-and-their-benefit-to-web-performance-4f4l)
-
-## Goals of this plugin 📢
-
-1. Add and update code from Rainlab Google Analytics plugin
-2. Add and update code from Google Analytics Extension plugin
-3. Add new features from the two new api's
-4. Add more components for other frameworks
-5. Make all the dashboard widgets **responsive** plus add new and exciting custom widgets to the dashboard, e.g.
-
-<p><img src="https://github.com/ayumi-cloud/ga4/blob/master/assets/images/dashboard-1.png"></p>
 
 ## Installation ❤️
 
