@@ -22,7 +22,7 @@ class LineChart extends ReportWidgetBase
         return [
             'title' => [
                 'title'             => 'google.ga4::lang.line.widget_title',
-                'default'           => 'Line Chart',
+                'default'           => 'Line Chart', //................... lang
                 'type'              => 'string',
                 'validationPattern' => '^.+$',
                 'validationMessage' => 'google.ga4::lang.line.title_required'
