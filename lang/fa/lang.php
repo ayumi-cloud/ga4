@@ -2,13 +2,13 @@
 
 return [
     'widgets' => [
-        'title_browsers' => 'مرورگر ها',
-        'description_browsers' => 'این گزاش این امکان را به شما میدهد تا از دفعات بازدید کاربران با مرورگر های مختلف اطلاع پیدا کنید. ',
-        'title_toppages' => 'صفحات داغ',
-        'noresult_toppages' => 'در بازه زمانی انتخاب شده صفحه ای به نمایش در نیامده است',
-        'title_traffic_goal' => 'ترافیک هدف',
-        'title_traffic_overview' => 'مرور ترافیک',
-        'title_traffic_sources' => 'منابع ترافیک',
+        'title_browsers'              => 'مرورگر ها',
+        'description_browsers'        => 'این گزاش این امکان را به شما میدهد تا از دفعات بازدید کاربران با مرورگر های مختلف اطلاع پیدا کنید. ',
+        'title_toppages'              => 'صفحات داغ',
+        'noresult_toppages'           => 'در بازه زمانی انتخاب شده صفحه ای به نمایش در نیامده است',
+        'title_traffic_goal'          => 'ترافیک هدف',
+        'title_traffic_overview'      => 'مرور ترافیک',
+        'title_traffic_sources'       => 'منابع ترافیک',
         'description_traffic_sources' => 'گزارش منابع ترافیک، منابعی را که به وب سایت شما اشاره کرده اند را نمایش میدهد.',
     ],
     'permissions' => [
@@ -43,5 +43,16 @@ return [
         'gapi_key_comment'     => 'فایل کلید خصوصی که از کنسول API گوگل دانلود نموده اید.',
         'tracking_id_comment'  => 'این مرود را میتوانید در صفحه مدیر / تنظیمات مشخصه گوگل بیابید.',
         'domain_name_comment'  => 'نام دامنه ای که میخواهید آن را ردیابی نمایید.',
+    ],
+    'report_widgets' => [
+        'trafficOverview' => 'Google Analytics Traffic Overview',
+        'trafficSources'  => 'Google Analytics Traffic Sources',
+        'browsers'        => 'Google Analytics Browsers',
+        'trafficGoal'     => 'Google Analytics Traffic Goal',
+        'topPages'        => 'Google Analytics Top Pages',
+        'jsEvents'        => 'Website Javascript Errors',
+    ],
+    'config' => [
+        'label' => 'Google Analytics 4',
     ],
 ];

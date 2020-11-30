@@ -2,13 +2,13 @@
 
 return [
     'widgets' => [
-        'title_browsers' => 'Webbläsare',
-        'description_browsers' => 'Denna rapporten låter dig se antalet besökare från de olika webbläsare folk använder för att besöka din sajt.',
-        'title_toppages' => 'Toppsidor',
-        'noresult_toppages' => 'Det fanns inga sidvisningar i det valda intervallet.',
-        'title_traffic_goal' => 'Trafikmål',
-        'title_traffic_overview' => 'Trafiköversikt',
-        'title_traffic_sources' => 'Trafikkällor',
+        'title_browsers'              => 'Webbläsare',
+        'description_browsers'        => 'Denna rapporten låter dig se antalet besökare från de olika webbläsare folk använder för att besöka din sajt.',
+        'title_toppages'              => 'Toppsidor',
+        'noresult_toppages'           => 'Det fanns inga sidvisningar i det valda intervallet.',
+        'title_traffic_goal'          => 'Trafikmål',
+        'title_traffic_overview'      => 'Trafiköversikt',
+        'title_traffic_sources'       => 'Trafikkällor',
         'description_traffic_sources' => 'Rapporten över trafikkällorna visar vart hänvisningarna till din sajt kommer ifrån.',
     ],
     'permissions' => [
@@ -43,5 +43,16 @@ return [
         'gapi_key_comment'     => 'Den privata nyckelfillen du laddade ner från Googles API-konsol',
         'tracking_id_comment'  => 'Du kan hitta spårnings-ID:t på sidan under Admin / Egendomsinställningar',
         'domain_name_comment'  => 'Specificera domännamnet du ska spåra',
+    ],
+    'report_widgets' => [
+        'trafficOverview' => 'Google Analytics Traffic Overview',
+        'trafficSources'  => 'Google Analytics Traffic Sources',
+        'browsers'        => 'Google Analytics Browsers',
+        'trafficGoal'     => 'Google Analytics Traffic Goal',
+        'topPages'        => 'Google Analytics Top Pages',
+        'jsEvents'        => 'Website Javascript Errors',
+    ],
+    'config' => [
+        'label' => 'Google Analytics 4',
     ],
 ];

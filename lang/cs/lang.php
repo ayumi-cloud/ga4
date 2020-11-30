@@ -29,4 +29,15 @@ return [
         'tracking_id_comment'  => 'Měřící číslo najdete na stránce Admin / Property Settings v Google Analytics',
         'domain_name_comment'  => 'Název domény, kterou chcete měřit',
     ],
+    'report_widgets' => [
+        'trafficOverview' => 'Google Analytics Traffic Overview',
+        'trafficSources'  => 'Google Analytics Traffic Sources',
+        'browsers'        => 'Google Analytics Browsers',
+        'trafficGoal'     => 'Google Analytics Traffic Goal',
+        'topPages'        => 'Google Analytics Top Pages',
+        'jsEvents'        => 'Website Javascript Errors',
+    ],
+    'config' => [
+        'label' => 'Google Analytics 4',
+    ],
 ];

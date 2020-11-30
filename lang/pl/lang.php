@@ -29,4 +29,15 @@ return [
         'tracking_id_comment'  => 'ID śledzenia można znaleźć w ustawieniach Google Analytics',
         'domain_name_comment'  => 'Domena, która będzie śledzona.',
     ],
+    'report_widgets' => [
+        'trafficOverview' => 'Google Analytics Traffic Overview',
+        'trafficSources'  => 'Google Analytics Traffic Sources',
+        'browsers'        => 'Google Analytics Browsers',
+        'trafficGoal'     => 'Google Analytics Traffic Goal',
+        'topPages'        => 'Google Analytics Top Pages',
+        'jsEvents'        => 'Website Javascript Errors',
+    ],
+    'config' => [
+        'label' => 'Google Analytics 4',
+    ],
 ];
