@@ -2,11 +2,9 @@
 
 > ⚠️ WARNING - This plugin is not finished - waiting for Google to finish coding the PHP SDK ⚠️ 
 >
-> Going to re-code everything from the ground up and add lots of new features
+> Going to re-code everything from the ground up and add lots of new features!
 >
-> This is a hard fork (to move somethings in a different direction and add extra features)
->
-> **No guarantee given to be finished** - you're welcome to add code updates and ideas!
+> This is a hard fork (to move somethings in a different direction and plenty of new and extra features)
 
 <p><img src="https://github.com/ayumi-cloud/ga4/blob/master/assets/images/banner.png"></p>
 
