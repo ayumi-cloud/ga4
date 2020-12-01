@@ -22,7 +22,7 @@ GA4 is the latest version of Google Analytics. Since it is the 4th version, it i
 	- [Google Analytics 4 Admin API](#google-analytics-4-admin-api-%EF%B8%8F)
 	- [Google Analytics 4 Data API](#google-analytics-4-data-api-%EF%B8%8F)
 - [Deprecations and removals](#deprecations-and-removals-)
-	- [Google Analytics 4 Reporting API v4](#google-analytics-4-reporting-api-v4-%EF%B8%8F)
+	- [Google Analytics Reporting API v4](#google-analytics-reporting-api-v4-%EF%B8%8F)
 - [Vendor Packages](#vendor-packages-)
 - [Enhancements](#enhancements-)
 - [Installation](#installation-%EF%B8%8F)
@@ -76,7 +76,7 @@ https://developers.google.com/analytics/devguides/reporting/data/v1
 
 ## Deprecations and removals ⛔
 
-### Google Analytics 4 Reporting API v4 ⚙️
+### Google Analytics Reporting API v4 ⚙️
 
 https://developers.google.com/analytics/devguides/reporting/core/v4
 
