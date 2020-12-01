@@ -73,9 +73,14 @@ https://developers.google.com/analytics/devguides/config/admin/v1
 
 https://developers.google.com/analytics/devguides/reporting/data/v1
 
+## Deprecations and removals ⛔
+
 ### Google Analytics 4 Reporting API v4 ⚙️
 
 https://developers.google.com/analytics/devguides/reporting/core/v4
+
+> The Google Analytics Reporting API v4 **does not support GA4 properties!** Instead use the `Google Analytics 4 Data API`.
+ 
 
 ## Vendor Packages 🧰
 
