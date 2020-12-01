@@ -29,7 +29,7 @@
                     <?php endforeach ?>
                     <?php if (!count($rows)): ?>
                         <tr>
-                            <td colspan="3">There were no results to display.</td>
+                            <td colspan="3"><?= e(trans('google.ga4::lang.errors.results')) ?></td>
                         </tr>
                     <?php endif ?>
                 </tbody>

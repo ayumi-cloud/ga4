@@ -22,7 +22,7 @@ class BarChart extends ReportWidgetBase
         return [
             'title' => [
                 'title'             => 'google.ga4::lang.barchart.widget_title',
-                'default'           => 'Bar Chart', //................... lang
+                'default'           => e(trans('google.ga4::lang.line.bar_chart')),
                 'type'              => 'string',
                 'validationPattern' => '^.+$',
                 'validationMessage' => 'google.ga4::lang.barchart.widget_title_required'
