@@ -109,7 +109,7 @@ class JsEvents extends ReportWidgetBase
     }
 	
     /**
-     * Create filter string (see docs https://developers.google.com/analytics/devguides/reporting/core/v4)
+     * Create filter string (see docs https://developers.google.com/analytics/devguides/reporting/data/v1)
      * You can extend this function
      */
     public function createFilter()
