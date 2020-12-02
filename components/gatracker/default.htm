@@ -1,3 +1,4 @@
+{% if __SELF__.measurementId is not empty %}
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ __SELF__.measurementId }}"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
@@ -8,10 +9,7 @@ gtag("js", new Date());
 
 gtag("config", "{{ __SELF__.measurementId }}");
 
-<?php 
-    $conversionId = __SELF__.conversionId ?? '';
-    if (!empty($conversionId)) { ?>gtag("config", "{{ __SELF__.conversionId }}");
-<?php } ?>
+{% if __SELF__.conversionId is not empty %}>gtag("config", "{{ __SELF__.conversionId }}");{% endif %}
 
 // Send a pageview when the page is first loaded.
 gtag("event", "page_view");
@@ -23,3 +21,4 @@ window.addEventListener("pageshow", function (event) {
     }
 });
 </script>
+{% endif %}
