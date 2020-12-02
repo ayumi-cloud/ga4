@@ -1,12 +1,14 @@
+{% if __SELF__.measurementId is not empty %}
 <amp-analytics type="gtag" data-credentials="include">
     <script type="application/json">
     {
         "vars" : {
-            "gtag_id": "{{ __SELF__.trackingId }}",
+            "gtag_id": "{{ __SELF__.measurementId }}",
             "config" : {
-                "{{ __SELF__.trackingId }}": { "groups": "default" }
+                "{{ __SELF__.measurementId }}": { "groups": "default" }
             }
         }
     }
     </script>
 </amp-analytics>
+{% endif %}
