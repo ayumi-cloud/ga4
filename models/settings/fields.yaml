@@ -41,7 +41,7 @@ fields:
         commentAbove: google.ga4::lang.settings.conversion_id_comment
 
     conversion_label:
-        span: left
+        span: right
         label: google.ga4::lang.settings.conversion_label
         commentAbove: google.ga4::lang.settings.conversion_label_comment
 
