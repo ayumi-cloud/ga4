@@ -160,7 +160,9 @@ To add the plugin's tracking code to your website add the component into the `<h
 To add the plugin's tracking code to your mobile website add this code line into the `<head>` section of your website:
 
 ```html
-<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+{% if __SELF__.measurementId is not empty %}
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+{% endif %}
 ```
 
 Then add the plugin's tracking code to your mobile website just after the `<body>` element, using the following tag:
