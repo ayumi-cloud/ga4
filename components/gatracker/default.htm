@@ -11,12 +11,12 @@ gtag("config", "{{ __SELF__.measurementId }}");
 
 {% if __SELF__.conversionId is not empty %}>gtag("config", "{{ __SELF__.conversionId }}");{% endif %}
 
-// Send a pageview when the page is first loaded.
+{# Send a pageview when the page is first loaded #}
 gtag("event", "page_view");
 
 window.addEventListener("pageshow", function (event) {
     if (event.persisted === true) {
-        // Send another pageview if the page is restored from bfcache.
+        {# Send another pageview if the page is restored from bfcache #}
         gtag("event", "page_view");
     }
 });
