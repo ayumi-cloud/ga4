@@ -8,28 +8,31 @@ fields:
         span: left
         label: google.ga4::lang.settings.gapi_key
         type: fileupload
-        commentAbove: google.ga4::lang.settings.gapi_key_comment
+        comment: google.ga4::lang.settings.gapi_key_comment
         mode: file
         fileTypes: json
 
     profile_id:
         span: right
         label: google.ga4::lang.settings.profile_id
-        commentAbove: google.ga4::lang.settings.profile_id_comment
+        comment: google.ga4::lang.settings.profile_id_comment
 
     # GA Tracking IDs
 
-    ### Add Info hint
+    hintTrackingId:
+        span: full
+        path: $/google/ga4/partials/hint-tracking-id.htm
+        type: hint
 
     measurement_id:
         span: left
         label: google.ga4::lang.settings.measurement_id
-        commentAbove: google.ga4::lang.settings.measurement_id_comment
+        comment: google.ga4::lang.settings.measurement_id_comment
 
     stream_id:
         span: right
         label: google.ga4::lang.settings.stream_id
-        commentAbove: google.ga4::lang.settings.stream_id_comment
+        comment: google.ga4::lang.settings.stream_id_comment
 
     # Google Ads Conversion Tracking
 
@@ -38,11 +41,11 @@ fields:
     conversion_id:
         span: left
         label: google.ga4::lang.settings.conversion_id
-        commentAbove: google.ga4::lang.settings.conversion_id_comment
+        comment: google.ga4::lang.settings.conversion_id_comment
 
     conversion_label:
         span: right
         label: google.ga4::lang.settings.conversion_label
-        commentAbove: google.ga4::lang.settings.conversion_label_comment
+        comment: google.ga4::lang.settings.conversion_label_comment
 
     # Add consent feature
