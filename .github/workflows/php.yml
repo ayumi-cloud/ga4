@@ -46,4 +46,7 @@ jobs:
 
       # https://github.com/marketplace/actions/dependabot-auto-merge
       - name: Dependabot Auto Merge
-        uses: ahmadnassri/action-dependabot-auto-merge@v2.2.0
+        uses: ahmadnassri/action-dependabot-auto-merge@v2
+        with:
+          target: minor
+          github-token: ${{ secrets.mytoken }}
