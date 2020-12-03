@@ -48,5 +48,5 @@ jobs:
       - name: Dependabot Auto Merge
         uses: ahmadnassri/action-dependabot-auto-merge@v2
         with:
-          target: minor
+          target: patch
           github-token: ${{ secrets.mytoken }}
