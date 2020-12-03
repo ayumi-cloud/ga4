@@ -39,14 +39,3 @@ jobs:
       # https://github.com/marketplace/actions/php-lint
       - name: PHP Lint
         uses: michaelw90/PHP-Lint@2.1.0
-
-      # https://github.com/marketplace/actions/owasp-zap-full-scan
-      #- name: OWASP ZAP Full Scan
-      #  uses: zaproxy/action-full-scan@v0.2.0
-
-      # https://github.com/marketplace/actions/dependabot-auto-merge
-      - name: Dependabot Auto Merge
-        uses: ahmadnassri/action-dependabot-auto-merge@v2
-        with:
-          target: patch
-          github-token: ${{ secrets.mytoken }}
