@@ -38,4 +38,4 @@ jobs:
 
       # https://github.com/marketplace/actions/php-lint
       - name: PHP Lint
-        uses: michaelw90/PHP-Lint@2.1.0
+        uses: michaelw90/PHP-Lint@master
