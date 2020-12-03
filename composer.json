@@ -4,9 +4,16 @@
     "description": "Google Analytics 4 integration plugin",
     "homepage": "https://developers.google.com/analytics",
     "keywords": ["google", "analytics"],
+    "license": "GPL-2.0-only",
     "require": {
-        "php": ">=7.0",
+        "php": "^7.1.3",
         "guzzlehttp/guzzle": "^7.2",
         "google/apiclient": "^2.7"
+    },
+    "archive": {
+        "exclude": [
+            ".gitignore",
+            ".idea/"
+        ]
     }
 }
