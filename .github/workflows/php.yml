@@ -36,10 +36,10 @@ jobs:
       # - name: Run test suite
       #   run: composer run-script test
 
-      # https://github.com/OskarStark/php-cs-fixer-ga
-      - name: OSKAR-PHP-CS-Fixer
-        uses: OskarStark/php-cs-fixer-ga@2.16.7
+      # https://github.com/marketplace/actions/php-lint
+      - name: PHP Lint
+        uses: michaelw90/PHP-Lint@2.1.0
 
-      # https://github.com/phonito/phonito-scanner-action
-      - name: Docker Vulnerability Scan With Phonito Security
-        uses: phonito/phonito-scanner-action@v1.1.0
+      # https://github.com/marketplace/actions/owasp-zap-full-scan
+      - name: OWASP ZAP Full Scan
+        uses: zaproxy/action-full-scan@v0.2.0
