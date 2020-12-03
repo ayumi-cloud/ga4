@@ -13,9 +13,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      # https://github.com/OskarStark/php-cs-fixer-ga
-      - name: PHP-CS-Fixer
-        uses: docker://oskarstark/php-cs-fixer-ga
   
       - name: Validate composer.json and composer.lock
         run: composer validate
@@ -39,16 +36,10 @@ jobs:
       # - name: Run test suite
       #   run: composer run-script test
 
+      # https://github.com/OskarStark/php-cs-fixer-ga
+      - name: OSKAR-PHP-CS-Fixer
+        uses: OskarStark/php-cs-fixer-ga@2.16.7
+
       # https://github.com/phonito/phonito-scanner-action
-      - name: Set tag var
-        id: vars
-        run: echo ::set-output name=docker_tag::$(echo ${GITHUB_REF} | cut -d'/' -f3)-${GITHUB_SHA}
-
-      - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag myapp:${{ steps.vars.outputs.docker_tag }}
-
-      - name: Scan with Phonito Security
-        uses: phonito/phonito-scanner-action@master
-        with:
-          image: myapp:${{ steps.vars.outputs.docker_tag }}
-          phonito-token: ${{ secrets.PHONITO_TOKEN }}
+      - name: Docker Vulnerability Scan With Phonito Security
+        uses: phonito/phonito-scanner-action@v1.1.0
