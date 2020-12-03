@@ -37,13 +37,12 @@ jobs:
       #   run: composer run-script test
 
       # https://github.com/marketplace/actions/php-lint
-      # https://github.com/michaelw90/PHP-Lint-Demo
       - name: PHP Lint
         uses: michaelw90/PHP-Lint@2.1.0
 
       # https://github.com/marketplace/actions/owasp-zap-full-scan
-      #- name: OWASP ZAP Full Scan
-      #  uses: zaproxy/action-full-scan@v0.2.0
+      - name: OWASP ZAP Full Scan
+        uses: zaproxy/action-full-scan@v0.2.0
 
       # https://github.com/marketplace/actions/dependabot-auto-merge
       # - name: Dependabot Auto Merge
