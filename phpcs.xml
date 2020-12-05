@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<ruleset name="GA4 Plugin">
+    <description>The coding standard for Google Analytics 4 integration plugin.</description>
+    <rule ref="PSR2">
+        <!-- Exceptions to the PSR-2 guidelines -->
+        <exclude name="PSR1.Methods.CamelCapsMethodName.NotCamelCaps" />
+        <exclude name="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseBrace" />
+        <exclude name="PSR2.ControlStructures.ControlStructureSpacing.SpacingAfterOpenBrace" />
+    </rule>
+
+    <rule ref="PSR1.Classes.ClassDeclaration.MissingNamespace">
+        <!-- Migration files and tests do not need a namespace defined -->
+        <exclude-pattern>*/tests/*</exclude-pattern>
+    </rule>
+
+    <rule ref="PSR1.Classes.ClassDeclaration.MultipleClasses">
+        <!-- Migration files and tests fixtures and cases can have multiple classes defined -->
+        <exclude-pattern>*/tests/*</exclude-pattern>
+    </rule>
+
+    <file>classes/</file>
+    <file>components/</file>
+    <file>lang/</file>
+    <file>models/</file>
+    <file>partials/</file>
+    <file>reportwidgets/</file>
+    <file>traits/</file>
+    <file>updates/</file>
+
+    <!-- Ignore vendor files -->
+    <exclude-pattern>*/vendor/*</exclude-pattern>
+</ruleset>
