@@ -209,16 +209,11 @@ A line chart is a graphical representation of an asset's historical price action
 | Dimension Label    | Device            |
 | Metric Label       | Visits            |
 
-
-
-
-
-
 ## Issues 🔨
 
 <img alt="GitHub closed issues" src="https://img.shields.io/github/issues-closed-raw/ayumi-cloud/ga4?style=plastic"> <img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/ayumi-cloud/ga4">
 
-If you face any issue, you can create a new issue in the Issues Tab and we will be glad to help you out!
+If you face any issue, you can create a new issue in the `Issues` tab and we will be glad to help you out!
 
 ## Troubleshooting 👿
 
