@@ -36,6 +36,7 @@ GA4 is the latest version of Google Analytics. Since it is the 4th version, it i
 	- [Bar Charts](#bar-charts-)
 	- [Pie Charts](#pie-charts-)
 	- [Line Charts](#line-charts-)
+- [Issues](#issues-)
 - [Troubleshooting](#troubleshooting-)
 	- [Fix for Windows / XAMPP](#fix-for-windows--xampp-)
 - [Browser Support](#browser-support-)
