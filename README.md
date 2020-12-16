@@ -297,6 +297,10 @@ This plugin uses some PSR standards to be the most interoperable possible:
 
 If you discover any security related issues, please open an issue! We will try and sort it out asap.
 
+## Semantic Versioning ✅
+
+This plugin uses: [Semantic Versioning](https://semver.org/).
+
 ## License 📄
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
