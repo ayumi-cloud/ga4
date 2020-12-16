@@ -284,7 +284,7 @@ If you find any bugs in the code or have any improvements in mind then feel free
 
 Patches and pull requests are encouraged. All code should follow the [PSR-1](https://www.php-fig.org/psr/psr-1/) and [PSR-2](https://www.php-fig.org/psr/psr-2/) style guidelines. **Please include unit tests whenever possible!**
 
-### PSR ♻️
+## PSR ♻️
 
 This plugin uses some PSR standards to be the most interoperable possible:
 
@@ -297,7 +297,7 @@ This plugin uses some PSR standards to be the most interoperable possible:
 
 If you discover any security related issues, please open an issue! We will try and sort it out asap.
 
-## Semantic Versioning ✅
+## Semantic Versioning 🎁
 
 This plugin uses: [Semantic Versioning](https://semver.org/).
 
