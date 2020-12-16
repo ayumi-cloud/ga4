@@ -42,8 +42,9 @@ GA4 is the latest version of Google Analytics. Since it is the 4th version, it i
 - [Browser Support](#browser-support-)
 - [Changelog](#changelog-)
 - [Contributions, Feature Requests and Feedback](#contributions-feature-requests-and-feedback-)
-	- [PSR](#psr-%EF%B8%8F)
+- [PSR](#psr-%EF%B8%8F)
 - [Security](#security-)
+- [Semantic Versioning](#semantic-versioning-)
 - [License](#license-)
 
 ## October CMS and Summer CMS Support 🔥
