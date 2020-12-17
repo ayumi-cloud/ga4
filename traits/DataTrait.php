@@ -1,15 +1,15 @@
-<?php 
+<?php
 
 declare(strict_types=1);
 
 namespace Google\GA4\Traits;
 
-use ApplicationException;
 use Exception;
+use ApplicationException;
 use Google\GA4\Classes\Analytics;
 
-trait DataTrait {
-
+trait DataTrait
+{
     /**
      * Renders the widget.
      */
@@ -17,8 +17,7 @@ trait DataTrait {
     {
         try {
             $this->renderData();
-        }
-        catch (Exception $ex) {
+        } catch (Exception $ex) {
             $this->vars['error'] = $ex->getMessage();
         }
 
@@ -30,15 +29,15 @@ trait DataTrait {
      */
     protected function loadData()
     {
-        if (!$days = $this->property('days'))
+        if (! $days = $this->property('days')) {
             throw new ApplicationException(e(trans('google.ga4::lang.errors.invalid_days')).$days);
-
-        if (!$dimension = $this->property('dimension'))
+        }
+        if (! $dimension = $this->property('dimension')) {
             throw new ApplicationException(e(trans('google.ga4::lang.errors.invalid_dimension')).$dimension);
-
-        if (!$metric = $this->property('metric'))
+        }
+        if (! $metric = $this->property('metric')) {
             throw new ApplicationException(e(trans('google.ga4::lang.errors.invalid_metric')).$metric);
-
+        }
         $obj = Analytics::instance();
         return $obj->service->data_ga->get(
             $obj->viewId,
@@ -48,5 +47,4 @@ trait DataTrait {
             ['dimensions' => $dimension, 'sort' => '-'.$metric]
         );
     }
-
 }

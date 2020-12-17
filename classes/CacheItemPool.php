@@ -1,14 +1,14 @@
-<?php 
+<?php
 
 declare(strict_types=1);
 
 namespace Google\GA4\Classes;
 
+use Exception;
+use InvalidArgumentException;
 use Psr\Cache\CacheItemInterface;
 use Psr\Cache\CacheItemPoolInterface;
 use Illuminate\Contracts\Cache\Repository;
-use InvalidArgumentException;
-use Exception;
 
 class CacheItemPool implements CacheItemPoolInterface
 {
@@ -48,15 +48,14 @@ class CacheItemPool implements CacheItemPoolInterface
         if ($this->repository->has($key)) {
             return new CacheItem($key, unserialize($this->repository->get($key)), true);
         }
-        else {
-            return new CacheItem($key);
-        }
+         
+        return new CacheItem($key);
     }
 
     /**
      * {@inheritdoc}
      */
-    public function getItems(array $keys = array())
+    public function getItems(array $keys = [])
     {
         return array_combine($keys, array_map(function ($key) {
             return $this->getItem($key);
@@ -82,8 +81,7 @@ class CacheItemPool implements CacheItemPoolInterface
             /* @var \Illuminate\Contracts\Cache\Store $store */
             $store = $this->repository;
             $store->flush();
-        }
-        catch (Exception $exception) {
+        } catch (Exception $exception) {
             return false;
         }
 
@@ -133,12 +131,10 @@ class CacheItemPool implements CacheItemPoolInterface
         try {
             if (is_null($expiresInMinutes)) {
                 $this->repository->forever($item->getKey(), serialize($item->get()));
-            }
-            else {
+            } else {
                 $this->repository->put($item->getKey(), serialize($item->get()), $expiresInMinutes);
             }
-        }
-        catch (Exception $exception) {
+        } catch (Exception $exception) {
             return false;
         }
 
@@ -178,7 +174,7 @@ class CacheItemPool implements CacheItemPoolInterface
      */
     protected function validateKey($key)
     {
-        if (!is_string($key) || preg_match('#[{}\(\)/\\\\@:]#', $key)) {
+        if (! is_string($key) || preg_match('#[{}\(\)/\\\\@:]#', $key)) {
             throw new InvalidArgumentException();
         }
     }

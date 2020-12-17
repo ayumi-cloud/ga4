@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 declare(strict_types=1);
 
@@ -15,6 +15,7 @@ class BarChart extends ReportWidgetBase
 
     /**
      * Define widget properties
+     *
      * @return  array
      */
     public function defineProperties()
@@ -25,49 +26,49 @@ class BarChart extends ReportWidgetBase
                 'default'           => e(trans('google.ga4::lang.line.bar_chart')),
                 'type'              => 'string',
                 'validationPattern' => '^.+$',
-                'validationMessage' => 'google.ga4::lang.barchart.widget_title_required'
+                'validationMessage' => 'google.ga4::lang.barchart.widget_title_required',
             ],
             'dimension' => [
                 'title'             => 'google.ga4::lang.barchart.dimension',
                 'type'              => 'string',
                 'validationPattern' => '^ga:[a-zA-Z]+$',
-                'validationMessage' => 'google.ga4::lang.barchart.invalid_dimension'
+                'validationMessage' => 'google.ga4::lang.barchart.invalid_dimension',
             ],
             'metric' => [
                 'title'             => 'google.ga4::lang.barchart.metric',
                 'default'           => 'ga:visits',
                 'type'              => 'string',
                 'validationPattern' => '^ga:[a-zA-Z]+$',
-                'validationMessage' => 'google.ga4::lang.barchart.invalid_metric'
+                'validationMessage' => 'google.ga4::lang.barchart.invalid_metric',
             ],
             'reportHeight' => [
                 'title'             => 'google.ga4::lang.barchart.chart_height',
                 'default'           => '200',
                 'type'              => 'string',
                 'validationPattern' => '^[0-9]+$',
-                'validationMessage' => 'google.ga4::lang.barchart.invalid_chart_height'
+                'validationMessage' => 'google.ga4::lang.barchart.invalid_chart_height',
             ],
             'legendAsTable' => [
                 'title'             => 'google.ga4::lang.barchart.legend_as_table',
                 'type'              => 'checkbox',
-                'default'           => 1
+                'default'           => 1,
             ],
             'days' => [
                 'title'             => 'google.ga4::lang.barchart.days_to_display',
                 'default'           => '30',
                 'type'              => 'string',
-                'validationPattern' => '^[0-9]+$'
+                'validationPattern' => '^[0-9]+$',
             ],
             'number' => [
                 'title'             => 'google.ga4::lang.barchart.results_to_display',
                 'default'           => '10',
                 'type'              => 'string',
                 'validationPattern' => '^[0-9]+$',
-                'description'       => 'google.ga4::lang.barchart.zero_displays_all'
+                'description'       => 'google.ga4::lang.barchart.zero_displays_all',
             ],
             'description' => [
-                'title'             => ''
-            ]
+                'title'             => '',
+            ],
         ];
     }
 
@@ -86,5 +87,4 @@ class BarChart extends ReportWidgetBase
 
         $this->vars['total'] = $data->getTotalsForAllResults()[$this->property('metric')];
     }
-
 }

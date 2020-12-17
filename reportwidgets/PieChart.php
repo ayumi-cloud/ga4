@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 declare(strict_types=1);
 
@@ -15,6 +15,7 @@ class PieChart extends ReportWidgetBase
 
     /**
      * Define widget properties
+     *
      * @return  array
      */
     public function defineProperties()
@@ -25,58 +26,58 @@ class PieChart extends ReportWidgetBase
                 'default'           => e(trans('google.ga4::lang.line.pie_chart')),
                 'type'              => 'string',
                 'validationPattern' => '^.+$',
-                'validationMessage' => 'google.ga4::lang.piechart.title_required'
+                'validationMessage' => 'google.ga4::lang.piechart.title_required',
             ],
             'dimension' => [
                 'title'             => 'google.ga4::lang.piechart.dimension',
                 'type'              => 'string',
                 'validationPattern' => '^ga:[a-zA-Z]+$',
-                'validationMessage' => 'google.ga4::lang.piechart.invalid_dimension'
+                'validationMessage' => 'google.ga4::lang.piechart.invalid_dimension',
             ],
             'metric' => [
                 'title'             => 'google.ga4::lang.piechart.metric',
                 'default'           => 'ga:visits',
                 'type'              => 'string',
                 'validationPattern' => '^ga:[a-zA-Z]+$',
-                'validationMessage' => 'google.ga4::lang.piechart.invalid_metric'
+                'validationMessage' => 'google.ga4::lang.piechart.invalid_metric',
             ],
             'reportSize' => [
                 'title'             => 'google.ga4::lang.piechart.chart_radius',
                 'default'           => '150',
                 'type'              => 'string',
                 'validationPattern' => '^[0-9]+$',
-                'validationMessage' => 'google.ga4::lang.piechart.chart_size_invalid'
+                'validationMessage' => 'google.ga4::lang.piechart.chart_size_invalid',
             ],
             'center' => [
                 'title'             => 'google.ga4::lang.piechart.center_chart',
-                'type'              => 'checkbox'
+                'type'              => 'checkbox',
             ],
             'legendAsTable' => [
                 'title'             => 'google.ga4::lang.piechart.legend_as_table',
                 'type'              => 'checkbox',
-                'default'           => 1
+                'default'           => 1,
             ],
             'displayTotal' => [
                 'title'             => 'google.ga4::lang.piechart.display_total',
                 'type'              => 'checkbox',
-                'default'           => 1
+                'default'           => 1,
             ],
             'days' => [
                 'title'             => 'google.ga4::lang.piechart.days_to_display',
                 'default'           => '30',
                 'type'              => 'string',
-                'validationPattern' => '^[0-9]+$'
+                'validationPattern' => '^[0-9]+$',
             ],
             'number' => [
                 'title'             => 'google.ga4::lang.piechart.results_to_display',
                 'default'           => '10',
                 'type'              => 'string',
                 'validationPattern' => '^[0-9]+$',
-                'description'       => 'google.ga4::lang.piechart.zero_displays_all'
+                'description'       => 'google.ga4::lang.piechart.zero_displays_all',
             ],
             'description' => [
-                'title'             => 'google.ga4::lang.piechart.report_description'
-            ]
+                'title'             => 'google.ga4::lang.piechart.report_description',
+            ],
         ];
     }
 
@@ -95,5 +96,4 @@ class PieChart extends ReportWidgetBase
 
         $this->vars['total'] = $data->getTotalsForAllResults()[$this->property('metric')];
     }
-
 }

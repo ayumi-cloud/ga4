@@ -1,13 +1,13 @@
-<?php 
+<?php
 
 declare(strict_types=1);
 
 namespace Google\GA4\ReportWidgets;
 
-use Backend\Classes\ReportWidgetBase;
-use Google\GA4\Classes\Analytics;
-use ApplicationException;
 use Exception;
+use ApplicationException;
+use Google\GA4\Classes\Analytics;
+use Backend\Classes\ReportWidgetBase;
 
 /**
  * Google Analytics traffic overview widget.
@@ -21,8 +21,7 @@ class TrafficOverview extends ReportWidgetBase
     {
         try {
             $this->loadData();
-        }
-        catch (Exception $ex) {
+        } catch (Exception $ex) {
             $this->vars['error'] = $ex->getMessage();
         }
 
@@ -40,14 +39,14 @@ class TrafficOverview extends ReportWidgetBase
                 'default'           => e(trans('google.ga4::lang.widgets.title_traffic_overview')),
                 'type'              => 'string',
                 'validationPattern' => '^.+$',
-                'validationMessage' => 'backend::lang.dashboard.widget_title_error'
+                'validationMessage' => 'backend::lang.dashboard.widget_title_error',
             ],
             'days' => [
                 'title'             => 'google.ga4::lang.widgets.days',
                 'default'           => '30',
                 'type'              => 'string',
-                'validationPattern' => '^[0-9]+$'
-            ]
+                'validationPattern' => '^[0-9]+$',
+            ],
         ];
     }
 
@@ -59,7 +58,7 @@ class TrafficOverview extends ReportWidgetBase
         $obj = Analytics::instance();
 
         $days = $this->property('days');
-        if (!$days) {
+        if (! $days) {
             throw new ApplicationException(e(trans('google.ga4::lang.widgets.jsevents_error')).$days);
         }
 
@@ -72,7 +71,7 @@ class TrafficOverview extends ReportWidgetBase
         );
 
         $rows = $data->getRows();
-        if (!$rows) {
+        if (! $rows) {
             throw new ApplicationException(e(trans('google.ga4::lang.widgets.jsevents_error3')));
         }
 
@@ -80,7 +79,7 @@ class TrafficOverview extends ReportWidgetBase
         foreach ($rows as $row) {
             $point = [
                 strtotime($row[0])*1000,
-                $row[1]
+                $row[1],
             ];
 
             $points[] = $point;

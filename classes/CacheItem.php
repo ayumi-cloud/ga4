@@ -1,13 +1,13 @@
-<?php 
+<?php
 
 declare(strict_types=1);
 
 namespace Google\GA4\Classes;
 
-use Psr\Cache\CacheItemInterface;
-use DateTimeInterface;
-use DateInterval;
 use DateTime;
+use DateInterval;
+use DateTimeInterface;
+use Psr\Cache\CacheItemInterface;
 
 class CacheItem implements CacheItemInterface
 {

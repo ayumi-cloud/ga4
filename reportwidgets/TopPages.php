@@ -1,13 +1,13 @@
-<?php 
+<?php
 
 declare(strict_types=1);
 
 namespace Google\GA4\ReportWidgets;
 
-use Backend\Classes\ReportWidgetBase;
-use Google\GA4\Classes\Analytics;
-use ApplicationException;
 use Exception;
+use ApplicationException;
+use Google\GA4\Classes\Analytics;
+use Backend\Classes\ReportWidgetBase;
 
 /**
  * Google Analytics top pages widget.
@@ -21,8 +21,7 @@ class TopPages extends ReportWidgetBase
     {
         try {
             $this->loadData();
-        }
-        catch (Exception $ex) {
+        } catch (Exception $ex) {
             $this->vars['error'] = $ex->getMessage();
         }
 
@@ -40,20 +39,20 @@ class TopPages extends ReportWidgetBase
                 'default'           => e(trans('google.ga4::lang.widgets.title_toppages')),
                 'type'              => 'string',
                 'validationPattern' => '^.+$',
-                'validationMessage' => 'backend::lang.dashboard.widget_title_error'
+                'validationMessage' => 'backend::lang.dashboard.widget_title_error',
             ],
             'days' => [
                 'title'             => 'google.ga4::lang.widgets.days',
                 'default'           => '7',
                 'type'              => 'string',
-                'validationPattern' => '^[0-9]+$'
+                'validationPattern' => '^[0-9]+$',
             ],
             'number' => [
                 'title'             => 'google.ga4::lang.widgets.toppages_number',
                 'default'           => '5',
                 'type'              => 'string',
-                'validationPattern' => '^[0-9]+$'
-            ]
+                'validationPattern' => '^[0-9]+$',
+            ],
         ];
     }
 
@@ -63,9 +62,9 @@ class TopPages extends ReportWidgetBase
     protected function loadData()
     {
         $days = $this->property('days');
-        if (!$days)
+        if (! $days) {
             throw new ApplicationException(e(trans('google.ga4::lang.widgets.jsevents_error')).$days);
-
+        }
         $obj = Analytics::instance();
         $data = $obj->service->data_ga->get($obj->viewId, $days.'daysAgo', 'today', 'ga:pageviews', ['dimensions' => 'ga:pagePath', 'sort' => '-ga:pageviews']);
 
@@ -73,8 +72,9 @@ class TopPages extends ReportWidgetBase
         $rows = $this->vars['rows'] = array_slice($rows, 0, $this->property('number'));
 
         $total = 0;
-        foreach ($rows as $row)
+        foreach ($rows as $row) {
             $total += $row[1];
+        }
 
         $this->vars['total'] = $total;
     }

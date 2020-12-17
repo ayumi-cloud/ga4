@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 declare(strict_types=1);
 
@@ -15,6 +15,7 @@ class LineChart extends ReportWidgetBase
 
     /**
      * Define widget properties
+     *
      * @return  array
      */
     public function defineProperties()
@@ -25,43 +26,43 @@ class LineChart extends ReportWidgetBase
                 'default'           => e(trans('google.ga4::lang.line.line_chart')),
                 'type'              => 'string',
                 'validationPattern' => '^.+$',
-                'validationMessage' => 'google.ga4::lang.line.title_required'
+                'validationMessage' => 'google.ga4::lang.line.title_required',
             ],
             'dimension' => [
                 'title'             => 'google.ga4::lang.line.dimension',
                 'type'              => 'string',
                 'validationPattern' => '^ga:[a-zA-Z]+$',
-                'validationMessage' => 'google.ga4::lang.line.invalid_dimension'
+                'validationMessage' => 'google.ga4::lang.line.invalid_dimension',
             ],
             'metric' => [
                 'title'             => 'google.ga4::lang.line.metric',
                 'default'           => 'ga:visits',
                 'type'              => 'string',
                 'validationPattern' => '^ga:[a-zA-Z]+$',
-                'validationMessage' => 'google.ga4::lang.line.invalid_metric'
+                'validationMessage' => 'google.ga4::lang.line.invalid_metric',
             ],
             'dimensionLabel' => [
                 'title'             => 'google.ga4::lang.line.dimension_label',
-                'type'              => 'string'
+                'type'              => 'string',
             ],
             'metricLabel' => [
                 'title'             => 'google.ga4::lang.line.metric_label',
                 'type'              => 'string',
-                'default'           => 'Visits'
+                'default'           => 'Visits',
             ],
             'days' => [
                 'title'             => 'google.ga4::lang.line.days_to_display',
                 'default'           => '30',
                 'type'              => 'string',
-                'validationPattern' => '^[0-9]+$'
+                'validationPattern' => '^[0-9]+$',
             ],
             'number' => [
                 'title'             => 'google.ga4::lang.line.results_to_display',
                 'default'           => '10',
                 'type'              => 'string',
                 'validationPattern' => '^[0-9]+$',
-                'description'       => 'google.ga4::lang.line.zero_displays_all'
-            ]
+                'description'       => 'google.ga4::lang.line.zero_displays_all',
+            ],
         ];
     }
 
@@ -79,8 +80,9 @@ class LineChart extends ReportWidgetBase
             : $data->getRows();
 
         $total = 0;
-        foreach ($rows as $row)
+        foreach ($rows as $row) {
             $total += $row[1];
+        }
 
         $this->vars['total'] = $total;
     }

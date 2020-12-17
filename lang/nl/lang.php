@@ -126,5 +126,5 @@ return [
         'invalid_dimension' => 'Invalid dimension value: ',
         'invalid_metric'    => 'Invalid metric value: ',
         'results'           => 'There were no results to display.',
-    ]
+    ],
 ];

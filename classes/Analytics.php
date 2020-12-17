@@ -1,16 +1,13 @@
-<?php 
+<?php
 
 declare(strict_types=1);
 
 namespace Google\GA4\Classes;
 
 use App;
-use Config;
 use Google_Client;
-use Google_Cache_File;
-use Google_Service_Analytics;
-use Google_Auth_AssertionCredentials;
 use ApplicationException;
+use Google_Service_Analytics;
 use Google\GA4\Models\Settings;
 
 class Analytics
@@ -35,11 +32,11 @@ class Analytics
     protected function init()
     {
         $settings = Settings::instance();
-        if (!strlen($settings->profile_id)) {
+        if (! strlen($settings->profile_id)) {
             throw new ApplicationException(e(trans('rainlab.googleanalytics::lang.strings.notconfigured')));
         }
 
-        if (!$settings->gapi_key) {
+        if (! $settings->gapi_key) {
             throw new ApplicationException(e(trans('rainlab.googleanalytics::lang.strings.keynotuploaded')));
         }
 

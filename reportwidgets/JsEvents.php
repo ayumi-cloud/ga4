@@ -1,13 +1,13 @@
-<?php 
+<?php
 
 declare(strict_types=1);
 
 namespace Google\GA4\ReportWidgets;
 
-use Backend\Classes\ReportWidgetBase;
-use Google\GA4\Classes\Analytics;
-use ApplicationException;
 use Exception;
+use ApplicationException;
+use Google\GA4\Classes\Analytics;
+use Backend\Classes\ReportWidgetBase;
 
 /**
  *  Google Analytics Javascript Error Events Widget
@@ -15,9 +15,9 @@ use Exception;
  */
 class JsEvents extends ReportWidgetBase
 {
-
     /**
      * filter for GA request
+     *
      * @var string
      */
     protected $filter = '';
@@ -29,8 +29,7 @@ class JsEvents extends ReportWidgetBase
     {
         try {
             $this->loadData();
-        }
-        catch (Exception $ex) {
+        } catch (Exception $ex) {
             $this->vars['error'] = $ex->getMessage();
         }
 
@@ -61,14 +60,14 @@ class JsEvents extends ReportWidgetBase
                 'title'             => 'google.ga4::lang.widgets.jsevents_daystitle',
                 'default'           => '30',
                 'type'              => 'string',
-                'validationPattern' => '^[0-9]+$'
+                'validationPattern' => '^[0-9]+$',
             ],
             'number' => [
                 'title'             => 'google.ga4::lang.widgets.jsevents_numbertitle',
                 'default'           => '10',
                 'type'              => 'string',
-                'validationPattern' => '^[0-9]+$'
-            ]
+                'validationPattern' => '^[0-9]+$',
+            ],
         ];
     }
 
@@ -78,7 +77,7 @@ class JsEvents extends ReportWidgetBase
     protected function loadData()
     {
         $days = $this->property('days');
-        if (!$days){
+        if (! $days) {
             throw new ApplicationException(e(trans('google.ga4::lang.widgets.jsevents_error')).$days);
         }
 
@@ -86,28 +85,29 @@ class JsEvents extends ReportWidgetBase
 
         $obj = Analytics::instance();
         $data = $obj->service->data_ga->get(
-                                    $obj->viewId,
-                                    $days.'daysAgo',
-                                    'today',
-                                    'ga:totalEvents',
-                                        [
-                                            'dimensions' => 'ga:eventCategory, ga:eventAction, ga:eventLabel',
-                                            'sort' => '-ga:totalEvents',
-                                            'filters' => $this->filter,
-                                            'max-results' => $this->property('number', 10)
-                                        ]
-                                    );
+            $obj->viewId,
+            $days.'daysAgo',
+            'today',
+            'ga:totalEvents',
+            [
+                'dimensions' => 'ga:eventCategory, ga:eventAction, ga:eventLabel',
+                'sort' => '-ga:totalEvents',
+                'filters' => $this->filter,
+                'max-results' => $this->property('number', 10),
+            ]
+        );
 
         $rows = $data->getRows() ?: [];
         $this->vars['rows'] = $rows;
 
         $total = 0;
-        foreach ($rows as $row)
+        foreach ($rows as $row) {
             $total += $row[3];
+        }
 
         $this->vars['total'] = $total;
     }
-	
+    
     /**
      * Create filter string (see docs https://developers.google.com/analytics/devguides/reporting/data/v1)
      * You can extend this function
@@ -116,9 +116,9 @@ class JsEvents extends ReportWidgetBase
     {
         $categories = explode(',', $this->property('category', e(trans('google.ga4::lang.widgets.jsevents_category'))));
         foreach ($categories as $key => $category) {
-            if (!empty($category)) {
+            if (! empty($category)) {
                 $categories[$key] = 'ga:eventCategory=='.rawurlencode(trim($category));
-            }else{
+            } else {
                 unset($categories[$key]); // If user sets empty category by typing two comma together, or last char comma
             }
         }

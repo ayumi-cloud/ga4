@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 declare(strict_types=1);
 
@@ -8,7 +8,6 @@ use October\Rain\Database\Model;
 
 /**
  * Google Analytics settings model
- *
  */
 class Settings extends Model
 {
@@ -21,7 +20,7 @@ class Settings extends Model
     public $settingsFields = 'fields.yaml';
 
     public $attachOne = [
-        'gapi_key' => ['System\Models\File', 'public' => false]
+        'gapi_key' => ['System\Models\File', 'public' => false],
     ];
 
     /**
@@ -33,17 +32,16 @@ class Settings extends Model
         'profile_id' => 'required_with:gapi_key',
         
         // Google analytics measurement id
-        'measurement_id'    => [ 'required', 'regex:/(^[a-zA-Z0-9\s\-]+$)+/', 'max:50' ],
+        'measurement_id'    => ['required', 'regex:/(^[a-zA-Z0-9\s\-]+$)+/', 'max:50'],
         
         // Google analytics stream id
-        'stream_id'         => [ 'nullable', 'regex:/(^[0-9]+$)+/', 'max:50' ],
+        'stream_id'         => ['nullable', 'regex:/(^[0-9]+$)+/', 'max:50'],
         
         // Google ads conversion tracking
-        'conversion_id'     => [ 'nullable', 'regex:/(^[a-zA-Z0-9\s\-]+$)+/', 'max:50' ],
-        'conversion_label'  => [ 'nullable', 'regex:/(^[a-zA-Z0-9\s\-]+$)+/', 'max:50' ],
+        'conversion_id'     => ['nullable', 'regex:/(^[a-zA-Z0-9\s\-]+$)+/', 'max:50'],
+        'conversion_label'  => ['nullable', 'regex:/(^[a-zA-Z0-9\s\-]+$)+/', 'max:50'],
         
         // GA Consent option to be added
-        
     ];
 
     /**

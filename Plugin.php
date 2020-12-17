@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 declare(strict_types=1);
 
@@ -15,7 +15,7 @@ class Plugin extends PluginBase
             'description' => 'google.ga4::lang.strings.plugin_desc',
             'icon'        => 'icon-bar-chart-o',
             'iconSvg'     => 'plugins/google/ga4/assets/images/logo.svg',
-            'homepage'    => 'https://developers.google.com/analytics'
+            'homepage'    => 'https://developers.google.com/analytics',
         ];
     }
 
@@ -32,12 +32,12 @@ class Plugin extends PluginBase
         return [
             'google.ga4.access_settings' => [
                 'tab'   => 'google.ga4::lang.permissions.tab',
-                'label' => 'google.ga4::lang.permissions.settings'
+                'label' => 'google.ga4::lang.permissions.settings',
             ],
             'google.ga4.view_widgets' => [
                 'tab'   => 'google.ga4::lang.permissions.tab',
-                'label' => 'google.ga4::lang.permissions.widgets'
-            ]
+                'label' => 'google.ga4::lang.permissions.widgets',
+            ],
         ];
     }
 
@@ -47,48 +47,48 @@ class Plugin extends PluginBase
             'Google\GA4\ReportWidgets\TrafficOverview' => [
                 'label'       => 'google.ga4::lang.report_widgets.trafficOverview',
                 'context'     => 'dashboard',
-                'permissions' => ['google.ga4.view_widgets']
+                'permissions' => ['google.ga4.view_widgets'],
             ],
             'Google\GA4\ReportWidgets\TrafficSources' => [
                 'label'       => 'google.ga4::lang.report_widgets.trafficSources',
                 'context'     => 'dashboard',
-                'permissions' => ['google.ga4.view_widgets']
+                'permissions' => ['google.ga4.view_widgets'],
             ],
             'Google\GA4\ReportWidgets\Browsers' => [
                 'label'       => 'google.ga4::lang.report_widgets.browsers',
                 'context'     => 'dashboard',
-                'permissions' => ['google.ga4.view_widgets']
+                'permissions' => ['google.ga4.view_widgets'],
             ],
             'Google\GA4\ReportWidgets\TrafficGoal' => [
                 'label'       => 'google.ga4::lang.report_widgets.trafficGoal',
                 'context'     => 'dashboard',
-                'permissions' => ['google.ga4.view_widgets']
+                'permissions' => ['google.ga4.view_widgets'],
             ],
             'Google\GA4\ReportWidgets\TopPages' => [
                 'label'       => 'google.ga4::lang.report_widgets.topPages',
                 'context'     => 'dashboard',
-                'permissions' => ['google.ga4.view_widgets']
+                'permissions' => ['google.ga4.view_widgets'],
             ],
             'Google\GA4\ReportWidgets\JsEvents' => [
                 'label'       => 'google.ga4::lang.report_widgets.jsEvents',
                 'context'     => 'dashboard',
-                'permissions' => ['google.ga4.view_widgets']
+                'permissions' => ['google.ga4.view_widgets'],
             ],
             'Google\GA4\ReportWidgets\BarChart' => [
                 'label'       => 'google.ga4::lang.strings.barchart_label',
                 'context'     => 'dashboard',
-                'permissions' => ['google.ga4.view_widgets']
+                'permissions' => ['google.ga4.view_widgets'],
             ],
             'Google\GA4\ReportWidgets\LineChart' => [
                 'label'       => 'google.ga4::lang.strings.line_label',
                 'context'     => 'dashboard',
-                'permissions' => ['google.ga4.view_widgets']
+                'permissions' => ['google.ga4.view_widgets'],
             ],
             'Google\GA4\ReportWidgets\PieChart' => [
                 'label'       => 'google.ga4::lang.strings.piechart_label',
                 'context'     => 'dashboard',
-                'permissions' => ['google.ga4.view_widgets']
-            ]
+                'permissions' => ['google.ga4.view_widgets'],
+            ],
         ];
     }
 
@@ -102,8 +102,8 @@ class Plugin extends PluginBase
                 'description' => 'google.ga4::lang.strings.settings_desc',
                 'class'       => 'Google\GA4\Models\Settings',
                 'permissions' => ['google.ga4.access_settings'],
-                'order'       => 600
-            ]
+                'order'       => 600,
+            ],
         ];
     }
 
