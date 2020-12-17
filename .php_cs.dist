@@ -36,7 +36,7 @@ $rules = [
 ];
 
 // Directories to exclude when fixing files.	
-$exclude = [	
+$excludes = [	
     'config',	
     'docs',	
     'logs',	
