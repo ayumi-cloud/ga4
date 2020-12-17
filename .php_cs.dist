@@ -1,3 +1,5 @@
+<?php
+
 // Default rules set to use when fixing files.	
 // See : https://gistlog.co/sixlive/2862a2185c76988838acaa45687a575c
 $rules = [	
