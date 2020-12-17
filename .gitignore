@@ -1,7 +1,7 @@
 # Composer ignores
 /vendor
-composer.phar
-composer.lock
+/composer.phar
+/composer.lock
 
 # Framework ignores
 .env
@@ -27,13 +27,13 @@ nbproject
 _ide_helper.php
 
 # Other ignores
-.DS_Store
+/.DS_Store
 package-lock.json
 /node_modules
 runner.log
 runner.xml
 Gruntfile.js
-.whitesource
-.travis.yml
-.gitattributes
-.php_cs.cache
+/.whitesource
+/.travis.yml
+/.gitattributes
+/.php_cs.cache
