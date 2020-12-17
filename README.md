@@ -18,7 +18,7 @@ GA4 is the latest version of Google Analytics. Since it is the 4th version, it i
 ## Table of Contents 📑
 
 - [October CMS and Summer CMS Support](#october-cms-and-summer-cms-support-)
-- [Requirements]()
+- [Requirements](#requirements-)
 - [GA API's](#ga-apis-%EF%B8%8F)
 	- [Google Analytics 4 Admin API](#google-analytics-4-admin-api-%EF%B8%8F)
 	- [Google Analytics 4 Data API](#google-analytics-4-data-api-%EF%B8%8F)
