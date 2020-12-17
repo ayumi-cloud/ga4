@@ -36,4 +36,4 @@ Gruntfile.js
 .whitesource
 .travis.yml
 .gitattributes
-
+.php_cs.cache
