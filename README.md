@@ -299,6 +299,33 @@ This plugin uses some PSR standards to be the most interoperable possible:
 - [PSR-17](https://www.php-fig.org/psr/psr-17/) Standard factories to create PSR-7 objects.
 - [PSR-18](https://www.php-fig.org/psr/psr-18/) Standard interface to send a http request and return a response.
 
+## PHP Coding Standards Fixer ⭕
+
+The PHP Coding Standards Fixer (PHP CS Fixer) tool fixes your code to follow standards; whether you want to follow PHP coding standards as defined in the PSR-1, PSR-2, etc., or other community driven ones like the Symfony one.
+
+### Installation 🔹
+
+The recommended way to install PHP CS Fixer is to use [Composer](https://getcomposer.org/download/) in a dedicated `composer.json` file in your project, for example in the
+`tools/php-cs-fixer` directory:
+
+```console
+$ mkdir --parents tools/php-cs-fixer
+$ composer require --working-dir=tools/php-cs-fixer friendsofphp/php-cs-fixer
+```
+
+For more details and other installation methods, see: [PHP-CS-Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer).
+
+### Usage 🔸
+
+Assuming you installed PHP CS Fixer as instructed above, you can run the
+following command to fix the files PHP files in the `desktop/ga4` directory:
+
+```console
+$ tools/php-cs-fixer/vendor/bin/php-cs-fixer fix desktop/ga4
+```
+
+(*) Change the above command to the correct folder location.
+
 ## Security 💥
 
 If you discover any security related issues, please open an issue! We will try and sort it out asap.
