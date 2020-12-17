@@ -3,6 +3,7 @@ name: PHP-CS-Fixer syle check
 on: [push, pull_request]
 
 jobs:
+  # https://github.com/marketplace/actions/oskar-php-cs-fixer
   php-cs-fixer:
     name: PHP-CS-Fixer
     runs-on: ubuntu-latest
@@ -10,5 +11,5 @@ jobs:
       - uses: actions/checkout@v2
       - name: PHP-CS-Fixer
         uses: docker://oskarstark/php-cs-fixer-ga
-        with:
-          args: --config=.php_cs.dist --diff --dry-run
+        # with:
+        #  args: --config=.php_cs.dist --diff --dry-run
