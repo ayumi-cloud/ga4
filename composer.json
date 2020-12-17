@@ -1,15 +1,57 @@
+
 {
     "name": "google/ga4",
-    "type": "plugin",
     "description": "Google Analytics 4 integration plugin",
-    "homepage": "https://developers.google.com/analytics",
-    "keywords": ["google", "analytics"],
-    "license": "GPL-2.0-only",
+    "type": "plugin",
+    "keywords": [
+        "google",
+        "analytics"
+    ],
+    "homepage": "https://github.com/ayumi-cloud/ga4",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Ayumi Hamasaki",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/ayumi-cloud/ga4/issues"
+    },
     "require": {
         "php": "^7.4||^8.0",
+        "composer/installers": "~1.0",
         "guzzlehttp/guzzle": "^7.2",
         "google/apiclient": "^2.7"
     },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0",
+        "mockery/mockery": "^1.3.0",
+        "symfony/phpunit-bridge": "^5.0",
+        "friendsofphp/php-cs-fixer": "^2.17"
+    },
+    "autoload": {
+        "psr-4": {
+            "Google\\GA4\\": "/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Google\\GA4\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": [
+            "./vendor/bin/phpunit --colors=always"
+        ],
+        "fix": [
+            "./vendor/bin/php-cs-fixer fix"
+        ],
+        "lint": [
+            "php-cs-fixer fix --dry-run"
+        ]
+    },
+    "minimum-stability": "dev",
     "archive": {
         "exclude": [
             ".gitignore",
