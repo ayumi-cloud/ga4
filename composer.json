@@ -41,14 +41,12 @@
         }
     },
     "scripts": {
+        "phpunit" : "phpunit --verbose --testdox",
+        "phpcs" : "php-cs-fixer fix",
+        "phpcs_validate" : "php-cs-fixer fix --dry-run --diff",
         "test": [
-            "./vendor/bin/phpunit --colors=always"
-        ],
-        "fix": [
-            "./vendor/bin/php-cs-fixer fix"
-        ],
-        "lint": [
-            "php-cs-fixer fix --dry-run"
+            "@phpunit",
+            "@phpcs_validate"
         ]
     },
     "minimum-stability": "dev",
