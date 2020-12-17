@@ -18,6 +18,7 @@ GA4 is the latest version of Google Analytics. Since it is the 4th version, it i
 ## Table of Contents 📑
 
 - [October CMS and Summer CMS Support](#october-cms-and-summer-cms-support-)
+- [Requirements]()
 - [GA API's](#ga-apis-%EF%B8%8F)
 	- [Google Analytics 4 Admin API](#google-analytics-4-admin-api-%EF%B8%8F)
 	- [Google Analytics 4 Data API](#google-analytics-4-data-api-%EF%B8%8F)
@@ -63,6 +64,10 @@ For [Summer CMS](https://github.com/ayumi-cloud/sc-main) this plugin will be upg
 - Access to all the internal backend themes, including dark and light modes.
 
 (*) To keep this code clean, the summer cms plugin will be hosted on a different repo.
+
+## Requirements 🚩
+
+This plugin has been optimized to work with php 7.4.x and 8.x. versions - we recommend upgrading from any lower php version.
 
 ## GA API's 🛠️
 
