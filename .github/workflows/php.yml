@@ -37,5 +37,10 @@ jobs:
       #   run: composer run-script test
 
       # https://github.com/marketplace/actions/php-lint
-      - name: PHP Lint
-        uses: michaelw90/PHP-Lint@master
+      #- name: PHP Lint
+      #  uses: michaelw90/PHP-Lint@master
+
+    # https://github.com/OskarStark/php-cs-fixer-ga
+      - uses: actions/checkout@v2
+      - name: PHP-CS-Fixer
+        uses: docker://oskarstark/php-cs-fixer-ga
