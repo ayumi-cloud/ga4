@@ -62,7 +62,7 @@ $rules = [
 
 // Instantiate finder.
 $finder = Finder::create()
-    ->in(getcwd())
+    ->in(__DIR__)
     ->exclude($exclude)
     ->name('*.php')
     ->notName($notName)
@@ -71,5 +71,5 @@ $finder = Finder::create()
 
 // Instantiate & return config.
 return Config::create()
-    ->setFinder($finder)
-    ->setRules($rules);
+    ->setRules($rules)
+    ->setFinder($finder);
