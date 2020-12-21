@@ -19,7 +19,6 @@
     },
     "require": {
         "php": "^7.4||^8.0",
-        "composer/installers": "~1.0",
         "guzzlehttp/guzzle": "^7.2",
         "google/apiclient": "^2.7"
     },
