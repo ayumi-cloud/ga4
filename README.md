@@ -1,7 +1,11 @@
 > ⚠️ WARNING - This plugin has been abandoned due to GA security issues! ⚠️ 
+> 
 > This plugin has been abandoned due to Google Analytics allowing hackers to bypass security measures and Google hasn't address the security gap!
+> 
 > Google Analytics allows Magecart scripts or payment card skimmers attacks and allows CSP rules to be easily bypassed.
+> 
 > Our focus is to develop the Summer CMS Analytics module instead, which is more secure and isn't affected by this attack method.
+> 
 > Also the Summer CMS Analytics module is not blocked by adblockers and browsers allowing for a much bigger and better data set to be captured by the Webmaster!
 
 # Google Analytics 4 integration plugin
