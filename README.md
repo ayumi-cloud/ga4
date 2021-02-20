@@ -1,8 +1,8 @@
 > ⚠️ WARNING - This plugin has been abandoned due to GA security issues! ⚠️ 
 > 
-> This plugin has been abandoned due to Google Analytics allowing hackers to bypass security measures and Google hasn't address the security gap!
+> This plugin has been abandoned due to Google Analytics allowing hackers to bypass security measures and Google hasn't addressed the security gap!
 > 
-> Google Analytics allows Magecart scripts or payment card skimmers attacks and allows CSP rules to be easily bypassed.
+> Google Analytics allows Magecart scripts or payment card skimmer attacks and allows CSP rules to be easily bypassed via `connect-src`
 > 
 > Our focus is to develop the Summer CMS Analytics module instead, which is more secure and isn't affected by this attack method.
 > 
