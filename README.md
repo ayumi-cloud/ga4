@@ -1,10 +1,10 @@
-# Google Analytics 4 integration plugin
+> ⚠️ WARNING - This plugin has been abandoned due to GA security issues! ⚠️ 
+> This plugin has been abandoned due to Google Analytics allowing hackers to bypass security measures and Google hasn't address the security gap!
+> Google Analytics allows Magecart scripts or payment card skimmers attacks and allows CSP rules to be easily bypassed.
+> Our focus is to develop the Summer CMS Analytics module instead, which is more secure and isn't affected by this attack method.
+> Also the Summer CMS Analytics module is not blocked by adblockers and browsers allowing for a much bigger and better data set to be captured by the Webmaster!
 
-> ⚠️ WARNING - This plugin is not finished - waiting for Google to finish coding the PHP SDK ⚠️ 
->
-> Going to re-code everything from the ground up and add lots of new features!
->
-> This is a hard fork (to move somethings in a different direction and plenty of new and extra features)
+# Google Analytics 4 integration plugin
 
 <p><img src="https://github.com/ayumi-cloud/ga4/blob/master/assets/images/banner.png"></p>
 
