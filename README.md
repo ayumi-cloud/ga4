@@ -8,7 +8,7 @@
 >
 > "We were recently notified of this activity and immediately suspended the offending accounts for violating our terms of service," a Google spokesperson has publicity said. "When we find unauthorized use of Google Analytics, we take action." - Google basically confirming the attack in the wild and not just a proof of concept!
 >
-> Note: Closing accounts doesn't fix the solution, it's just masking the problem. Google needs to update its address uri structure to fix this issue properly!
+> Note: Closing accounts doesn't fix the issue, it's just masking the problem. Google needs to update its address uri structure to fix this issue properly!
 > 
 > Our focus is to develop the Summer CMS Analytics module instead, which is more secure and isn't affected by this attack method.
 > 
