@@ -4,6 +4,8 @@
 > 
 > Google Analytics allows Magecart scripts or payment card skimmer attacks and allows CSP rules to be easily bypassed via `connect-src`
 > 
+> This is because Google Analytics sends it's pings to the same address for every single Google Analytics user. The fix for this would be to create a unique address for each user account to send the pings and prevent other accounts accessing the data.
+>
 > "We were recently notified of this activity and immediately suspended the offending accounts for violating our terms of service," a Google spokesperson has publicity said. "When we find unauthorized use of Google Analytics, we take action." - Google basically confirming the attack in the wild and not just a proof of concept!
 >
 > Our focus is to develop the Summer CMS Analytics module instead, which is more secure and isn't affected by this attack method.
